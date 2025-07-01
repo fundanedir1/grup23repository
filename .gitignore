@@ -1,0 +1,20 @@
+# Unity cache ve geçici dosyaları
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+# Visual Studio/JetBrains dosyaları
+.vscode/
+*.csproj
+*.sln
+*.user
+*.unitypackage
+
+# OS geçici dosyaları
+.DS_Store
+Thumbs.db
