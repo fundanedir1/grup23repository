@@ -1,7 +1,7 @@
 # grup23repository
-Takım Adı:
+## Takım Adı:
 
-Takım Üye ve Rolleri:
+## Takım Üye ve Rolleri:
 
 | İsim | LinkedIn | Görev |
 |------|----------|-------|
@@ -15,14 +15,14 @@ Takım Üye ve Rolleri:
 
 
 
-Oyun İsmi:
+## Oyun İsmi:
 
 "Farmageddon" veya "Joystick Harvest"
 Slogan: "Gaming was his escape... until it became his battlefield."
 
 
 
-Oyunun Hikayesi:
+## Oyunun Hikayesi:
 
 Derinlerde bir yerde, sıradan bir çiftliğin sessizliğini sadece rüzgarın uğultusu ve kuşların cıvıltısı bozar. Bu çiftliğin sahibi ise sıradışı bir çiftçidir. Gündüzleri domates eker, mısır sular, ambarını düzenler. Ama geceleri... işler değişir.
 
@@ -37,14 +37,14 @@ Ama dikkat et: Her oyuna giriş, dünyanı biraz daha geri dönülmez şekilde d
 
 
 
-Oyun Açıklaması:
+## Oyun Açıklaması:
 
 Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgisayarda zombi oyunu oynar. Ancak bir gün oyunla gerçeklik iç içe geçer. Aynı çiftlik bozulmuş bir dünyaya dönüşür ve zombiler saldırmaya başlar. Görevin: zombileri alt ederek altın ve kristal kazanmak, bu ganimetlerle gerçek çiftliğini geliştirmek.
 İki dünya. Tek çiftçi. Hayatta kalmak için oyna!
 
 
 
-Hedef Kitle:
+## Hedef Kitle:
 
 * 13–30 yaş arası aksiyon, fps, hayatta kalma, zombi ve simülasyon çiftlik türlerine ilgi duyan genç ve genç yetişkin oyuncular.
 * Gündelik rutinlerle fantastik unsurların karışımını eğlenceli bulan oyuncular.
@@ -53,22 +53,22 @@ Hedef Kitle:
 
 
 
-Oyun Özellikleri ve Oynanış Özeti:
-Gerçek Çiftlik Rutinleri:
+## Oyun Özellikleri ve Oynanış Özeti:
+### Gerçek Çiftlik Rutinleri:
 * Ürün ek, sulama yap, çiftlik görevlerini tamamla
 * Hasat yaparak XP ve bonus kazan
 * Bilgisayara gir, “zombi oyununa” başla
 
-Zombi Oyunu Rutinleri:
+### Zombi Oyunu Rutinleri:
 * Gerçek çiftlik artık bir savaş alanı
 * Zombilerle savaş, altın ve kristal topla
 
-Gelişim Sistemi:
+### Gelişim Sistemi:
 * Topladığın altınlarla gerçek çiftliğini geliştir
 * Yeni ekipmanlar, silahlar, savunma çitleri inşa et
 * Oyunda geliştikçe çiftçinin dünyası da değişir
 
-Temalar:
+### Temalar:
 * Gerçeklik & sanallık iç içe
 * Gündelik yaşamla kaosun çatışması
 * Korku-komedi karışımı bir atmosfer
