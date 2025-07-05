@@ -120,9 +120,18 @@ Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir
 
 
 ## Oyun içi görseller:
+Trello Board Görüntüsü:
+![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102448.png)
 
+Game UI Başlangıç Görselleri:
+![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102537.png)
+![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102557.png)
+![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102610.png)
+
+Çiftlik Başlangıç Assetleri:
 ![Sprint Görseli](https://raw.githubusercontent.com/fundanedir1/grup23repository/main/WhatsApp%20Image%202025-07-04%20at%2022.14.52.jpeg)
 ![Sprint Ekran Görüntüsü 2](https://raw.githubusercontent.com/fundanedir1/grup23repository/main/WhatsApp%20Image%202025-07-04%20at%2022.40.45.jpeg)
+
 
 
 
