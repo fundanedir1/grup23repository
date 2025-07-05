@@ -5,11 +5,11 @@
 
 | İsim | LinkedIn | Görev |
 |------|----------|-------|
-| Funda Ayas | [LinkedIn](https://linkedin.com/in/ahmetyilmaz) | Scrum Master |
-| Ozan Yücel | [LinkedIn](https://linkedin.com/in/elifdemir) | Project Manager |
+| Funda Ayas | [LinkedIn](https://www.linkedin.com/in/fundaayas/) | Scrum Master |
+| Ozan Yücel | [LinkedIn]() | Project Manager |
 | Dilara Tatlıdede | [LinkedIn](https://www.linkedin.com/in/dilara-tatl%C4%B1dede-9197b4333/) | Developer |
 | Zehra Timurağaoğlu | [LinkedIn](https://www.linkedin.com/in/zehra-timura%C4%9Fao%C4%9Flu-9b89222a6/) | Developer |
-| Arda Bağ | [LinkedIn](https://linkedin.com/in/cankoc) | Developer |
+| Arda Bağ | [LinkedIn](https://www.linkedin.com/in/arda-ba%C4%9F-098530196/) | Developer |
 
 
 
