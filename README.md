@@ -75,3 +75,48 @@ Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgi
 
 
 
+# SPRINT 1
+## Sprint Notları:
+
+Projemize ait mekanikler Product Backlog’a yazılmıştır. Trello üzerinden görev dağılımları ve ilerlemeler takip edilecektir. Her görev, takımın yetkinliğine ve sprint hedeflerine göre önceliklendirilmiştir.
+
+## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
+
+**Puan tamamlama mantığı:**
+Toplamda 3 sprint planlanmış ve her birine 100’er puanlık iş yükü düşecek şekilde organize edilmiştir. Bu sprintte temel kurulum ve oyunun temel mekaniklerinin oluşturulması hedeflenmiştir.
+
+**Sprint görevleri:**
+Çiftlik mekanikleri, fps kontrolü, oyun hikâyesi, temel UI ve asset import süreçleri bu sprintte planlanmıştır. 
+
+**Daily Scrum:**
+Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir. Ekip üyeleri ayrıca WhatsApp grubu üzerinden gün içi iletişimi sağlamaktadır.
+
+**Sprint Board Update:**
+ Github ve Trello panosu aktif olarak kullanılmaktadır.
+ 
+**Github Repository:** https://github.com/fundanedir1/grup23repository
+
+**Trello Panosu:** https://trello.com/invite/b/6859746f89f00519e4268dce/ATTI400136ed909cc875e31180056483aa24A9C53FC4/trello-panom
+
+
+| Görev                                           | Puan |
+|------------------------------------------------|------|
+| Unity projesi kurulumu ve Github repository oluşturulması | 10   |
+| Ana assetlerin araştırılması ve import edilmesi | 15   |
+| FPS kontrol sistemi kurulumu                     | 15   |
+| Çiftlik temel mekanikleri (ekim, sulama, hasat) | 15   |
+| UI ve envanter tasarımının temel hali            | 10   |
+| Oyun hikâyesi, isim ve temanın netleştirilmesi   | 25   |
+| Ses efektlerinin araştırılması ve eklenmesi       | 10   |
+
+
+## Ürün Durumu:
+
+* Oyunun adı, sloganı, hikayesi, tarzı, hedef kitlesi, temel mekanikleri belirlendi.
+* Oyunda kullanılabilecek temel ses efektleri, assetler, mekanikler araştırıldı
+* Unity’de çiftlik alanı temel olarak oluşturuldu.
+* Su fıskiyesi, mantar, zombi gibi temel oyun nesneleri belirlendi
+* Oyunun temel UI elementleri projeye eklendi
+
+
+
