@@ -6,7 +6,7 @@
 | İsim | LinkedIn | Görev |
 |------|----------|-------|
 | Funda Ayas | [LinkedIn](https://www.linkedin.com/in/fundaayas/) | Scrum Master |
-| Ozan Yücel | [LinkedIn]() | Project Manager |
+| Ozan Yücel | [LinkedIn](https://www.linkedin.com/in/ozany%C3%BCcel/) | Project Manager |
 | Dilara Tatlıdede | [LinkedIn](https://www.linkedin.com/in/dilara-tatl%C4%B1dede-9197b4333/) | Developer |
 | Zehra Timurağaoğlu | [LinkedIn](https://www.linkedin.com/in/zehra-timura%C4%9Fao%C4%9Flu-9b89222a6/) | Developer |
 | Arda Bağ | [LinkedIn](https://www.linkedin.com/in/arda-ba%C4%9F-098530196/) | Developer |
@@ -48,6 +48,7 @@ Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgi
 
 * 13–30 yaş arası aksiyon, fps, hayatta kalma, zombi ve simülasyon çiftlik türlerine ilgi duyan genç ve genç yetişkin oyuncular.
 * Gündelik rutinlerle fantastik unsurların karışımını eğlenceli bulan oyuncular.
+* Retro oyun hayranları
 
 
 
@@ -78,6 +79,8 @@ Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgi
 # SPRINT 1
 ## Sprint Notları:
 
+**Beyin fırtınası ve Toplantı Notları:** https://docs.google.com/document/d/19O8CRycmSfqDxuZJJVqnpBqQOWE-YKwVRhb54RnuI7A/edit?usp=sharing
+
 Projemize ait mekanikler Product Backlog’a yazılmıştır. Trello üzerinden görev dağılımları ve ilerlemeler takip edilecektir. Her görev, takımın yetkinliğine ve sprint hedeflerine göre önceliklendirilmiştir.
 
 ## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
@@ -90,6 +93,7 @@ Toplamda 3 sprint planlanmış ve her birine 100’er puanlık iş yükü düşe
 
 **Daily Scrum:**
 Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir. Ekip üyeleri ayrıca WhatsApp grubu üzerinden gün içi iletişimi sağlamaktadır.
+
 
 **Sprint Board Update:**
  Github ve Trello panosu aktif olarak kullanılmaktadır.
