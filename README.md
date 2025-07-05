@@ -119,4 +119,10 @@ Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir
 * Oyunun temel UI elementleri projeye eklendi
 
 
+## Oyun içi görseller:
+
+![Sprint Görseli](https://raw.githubusercontent.com/fundanedir1/grup23repository/main/WhatsApp%20Image%202025-07-04%20at%2022.14.52.jpeg)
+![Sprint Ekran Görüntüsü 2](https://raw.githubusercontent.com/fundanedir1/grup23repository/main/WhatsApp%20Image%202025-07-04%20at%2022.40.45.jpeg)
+
+
 
