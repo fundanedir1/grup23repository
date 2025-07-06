@@ -123,7 +123,7 @@ Projemize ait mekanikler Product Backlog’a yazılmıştır. Trello üzerinden 
 Toplamda 3 sprint planlanmış ve her birine 100’er puanlık iş yükü düşecek şekilde organize edilmiştir. Bu sprintte temel kurulum ve oyunun temel mekaniklerinin oluşturulması hedeflenmiştir. Ek olarak puanları belirlenmeyen yan görevler de Trello'ya eklenmiştir. Bu görevler de takım arkadaşlarımızın emeklerini içerdiğinden bir sonraki sprintte genel bir başlık altında puanlanabilir. Ek olarak Trello'ya bir sekme olarak eklenebilir: "Yan Görevler/Side Quests" gibi.
 
 **Sprint görevleri:**
-Puanlanan Görevler: Çiftlik mekanikleri;fps kontrolü;oyun hikâyesi, isim, ve temanın netleştirilmesi; temel UI ve asset import süreçleri bu sprintte planlanmıştır. 
+Puanlanan Görevler: Çiftlik mekanikleri;ses ve ışık efektleri araştırması;fps kontrolü;oyun hikâyesi, isim, ve temanın netleştirilmesi; temel UI ve asset import süreçleri bu sprintte planlanmıştır. 
 
 Yan Görevler: Unity ve GitHub repository kurulumu, görev dağılımını bitirmek, bootcamp kılavuzu ve sprint tanıtım videosunu izlemek.
 
@@ -148,7 +148,7 @@ Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir
 | Çiftlik temel mekanikleri (ekim, sulama, hasat) | 15   |
 | UI ve envanter tasarımının temel hali            | 10   |
 | Oyun hikâyesi, isim ve temanın netleştirilmesi   | 25   |
-| Ses efektlerinin araştırılması ve eklenmesi       | 10   |
+| Ses ve ışık efektlerinin araştırılması ve eklenmesi       | 10   |
 
 
 
