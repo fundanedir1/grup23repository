@@ -138,7 +138,10 @@ Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir
 
 Trello panosundan da takip edileceği üzere "TO DO" ve "DONE" listelerinde yukarıdaki tabloda yer alan puanlamalarla tasklar görülmekte. "DONE" listesinde yer alan puanlı aktiviteler yukardaki aktivitelerden bitenleri gösteriyor. Hala "TO DO" da olanlar ise henüz üzerinde çalışılmaya başlanmayanları gösteriyor.
 Trello Board Görüntüsü:
-![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102448.png)
+Güncelleme öncesi:
+![Trello 1](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102448.png)
+Güncelleme sonrası:
+![Trello 2](https://github.com/fundanedir1/grup23repository/blob/3eca43700d9eb63453759e1eb7c72418d385d008/trello%20ssleri/trello2.png?raw=true)
 
 ## Ürün Durumu:
 
