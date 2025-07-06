@@ -153,7 +153,7 @@ Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir
 
 
 Trello panosundan da takip edileceği üzere "TO DO" ve "DONE" listelerinde yukarıdaki tabloda yer alan puanlamalarla tasklar görülmekte. "DONE" listesinde yer alan puanlı aktiviteler yukardaki aktivitelerden bitenleri gösteriyor. Hala "TO DO" da olanlar ise henüz üzerinde çalışılmaya başlanmayanları gösteriyor.
-1. Sprint sonunda tamamlanan puan: 70 (sprint review toplantısından sonra değişebilir)
+1. Sprint sonunda tamamlanan puan: 100 (sprint review toplantısından sonra değişebilir)
 
 Trello Board Görüntüsü:
 Güncelleme öncesi:
