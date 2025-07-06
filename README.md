@@ -179,7 +179,6 @@ Game UI Başlangıç Görselleri:
 ![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102610.png)
 
 Çiftlik Başlangıç Assetleri:
-![Sprint Görseli](https://raw.githubusercontent.com/fundanedir1/grup23repository/main/WhatsApp%20Image%202025-07-04%20at%2022.14.52.jpeg)
 ![Oyun İçi Görsel](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.41%20(1).jpeg?raw=true)
 ![Oyun İçi Görsel 1](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.41%20(1).jpeg?raw=true)
 ![Oyun İçi Görsel 2](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.41%20(2).jpeg?raw=true)
