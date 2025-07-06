@@ -45,6 +45,10 @@ Ama dikkat et: Her oyuna giriş, dünyanı biraz daha geri dönülmez şekilde d
 Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgisayarda zombi oyunu oynar. Aynı çiftlik bozulmuş bir dünyaya dönüşür ve zombiler saldırmaya başlar. Görevin: zombileri alt ederek altın ve kristal kazanmak, bu ganimetlerle gerçek çiftliğini geliştirmek.
 İki dünya. Tek çiftçi. Hayatta kalmak için oyna!
 
+Game Logic:
+![Trello Ekran Görüntüsü](https://github.com/fundanedir1/grup23repository/blob/cb5d2bb89b6a46357cab4492b3f1bbd220a6b829/trello%20ssleri/WhatsApp_G%C3%B6rsel_2025-07-04_saat_16.21.05_1b374f19.jpg?raw=true)
+
+
 # Pazarlama Stratejisi
 LEAN CANVAS LİNKİ: https://miro.com/app/board/uXjVIhXp1nY=/
 ![LEAN CANVAS](https://github.com/fundanedir1/grup23repository/blob/b915bc75c3660d39518f4a5b69b315e2b370b450/oyun_ici_gorseller/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-06%20130000.png?raw=true)
