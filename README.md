@@ -43,6 +43,8 @@ Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgi
 İki dünya. Tek çiftçi. Hayatta kalmak için oyna!
 
 # Pazarlama Stratejisi
+![LEAN CANVAS](https://github.com/fundanedir1/grup23repository/blob/b915bc75c3660d39518f4a5b69b315e2b370b450/oyun_ici_gorseller/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-06%20130000.png?raw=true)
+
 
 ## 1. Hedef Kitle:
 
@@ -100,7 +102,7 @@ Reddit & indie game forumlarında geliştirici günlüğü (devlog) paylaşmak
 
 **Beyin fırtınası ve Toplantı Notları:** https://docs.google.com/document/d/19O8CRycmSfqDxuZJJVqnpBqQOWE-YKwVRhb54RnuI7A/edit?usp=sharing
 
-Projemize ait mekanikler Product Backlog’a yazılmıştır. Trello üzerinden görev dağılımları ve ilerlemeler takip edilecektir. Her görev, takımın yetkinliğine ve sprint hedeflerine göre önceliklendirilmiştir.
+Projemize ait mekanikler Product Backlog’a yazılmıştır. Trello üzerinden görev dağılımları ve ilerlemeler takip edilecektir. Her görev, takımın yetkinliğine ve sprint hedeflerine göre önceliklendirilmiş ve puanlanmıştır.
 
 ## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
 
@@ -133,6 +135,11 @@ Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir
 | Ses efektlerinin araştırılması ve eklenmesi       | 10   |
 
 
+
+Trello panosundan da takip edileceği üzere "TO DO" ve "DONE" listelerinde yukarıdaki tabloda yer alan puanlamalarla tasklar görülmekte. "DONE" listesinde yer alan puanlı aktiviteler yukardaki aktivitelerden bitenleri gösteriyor. Hala "TO DO" da olanlar ise henüz üzerinde çalışılmaya başlanmayanları gösteriyor.
+Trello Board Görüntüsü:
+![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102448.png)
+
 ## Ürün Durumu:
 
 * Oyunun adı, sloganı, hikayesi, tarzı, hedef kitlesi, temel mekanikleri belirlendi.
@@ -143,8 +150,7 @@ Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir
 
 
 ## Oyun içi görseller:
-Trello Board Görüntüsü:
-![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102448.png)
+
 
 Game UI Başlangıç Görselleri:
 ![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102537.png)
