@@ -39,22 +39,41 @@ Ama dikkat et: Her oyuna giriş, dünyanı biraz daha geri dönülmez şekilde d
 
 ## Oyun Açıklaması:
 
-Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgisayarda zombi oyunu oynar. Ancak bir gün oyunla gerçeklik iç içe geçer. Aynı çiftlik bozulmuş bir dünyaya dönüşür ve zombiler saldırmaya başlar. Görevin: zombileri alt ederek altın ve kristal kazanmak, bu ganimetlerle gerçek çiftliğini geliştirmek.
+Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgisayarda zombi oyunu oynar. Aynı çiftlik bozulmuş bir dünyaya dönüşür ve zombiler saldırmaya başlar. Görevin: zombileri alt ederek altın ve kristal kazanmak, bu ganimetlerle gerçek çiftliğini geliştirmek.
 İki dünya. Tek çiftçi. Hayatta kalmak için oyna!
 
+# Pazarlama Stratejisi
 
-
-## Hedef Kitle:
+## 1. Hedef Kitle:
 
 * 13–30 yaş arası aksiyon, fps, hayatta kalma, zombi ve simülasyon çiftlik türlerine ilgi duyan genç ve genç yetişkin oyuncular.
 * Gündelik rutinlerle fantastik unsurların karışımını eğlenceli bulan oyuncular.
 * Retro oyun hayranları
 
+## 2. İlk Çıkış ve Yayılım Stratejisi
+**Steam Early Access / itch.io Yayını:** İlk geri bildirimleri toplamak için oyunun ilk sürümünü "indie" platformlarda yayınlayarak uygun fiyatla sunmak.
+**Tanıtım Videosu (Trailer):** 60 saniyelik enerjik bir fragman: Çiftlik rutinlerinden zombi dünyasına bilgisayarın içinden geçişi gösteren bir video. Mizahi ama gerilimli müzik ve slogan ile bitiş: "Gaming was his escape... until it became his battlefield."
+**Sosyal Medya Mini Videoları** TikTok & Instagram Reels & YouTube Shorts’ta “Zombi bastı, mısırları bırak!” tarzı komik 15 saniyelik esprili oyun içi videoları #zombiefarmer, #farmageddon, #gaminglife gibi hashtaglerle paylaşmak
+**Influencer İş Birlikleri** Mikro oyun yayıncılarına erken erişim kodları vermek ve mizah seviyesi yüksek, bağımsız oyunları inceleyen YouTuber’lara oynanış videosu yaptırmak ve farklı camialardan kitleleri niş olabilecek influencerlara oyunu oynatmak ve böylece farklı kitlelerin word of mouth ile oyunu konuşmasını sağlamak. 
+Sticker paketleri veya gif animasyonları ile Discord kitlesine yayılım sağlamak
+Reddit & indie game forumlarında geliştirici günlüğü (devlog) paylaşmak
+“Bu oyuna hangi sebzeleri ya da zombileri eklesek?” gibi interaktif sosyal medya anketleri
+
+## 3. Monetizasyon & Uzun Vadeli Plan
+* İlk versiyon ücretsiz/demo + tam sürüm ücretli
+* Kozmetik içerik (örneğin: zombi kostümü, çiftlik süsleri) satılabilir
+* Mevsimsel etkinlikler (Cadılar Bayramı zombileri, noel çifti gibi)
+  - Çiftlikteki sebzelerin de zombi olduğu bir cadılar bayramı özel bölümü eklenebilir.
 
 
 
 
-## Oyun Özellikleri ve Oynanış Özeti:
+
+
+
+
+# Oyun Özellikleri ve Oynanış Özeti:
+
 ### Gerçek Çiftlik Rutinleri:
 * Ürün ek, sulama yap, çiftlik görevlerini tamamla
 * Hasat yaparak XP ve bonus kazan
