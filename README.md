@@ -1,5 +1,5 @@
 # grup23repository
-## Takım Adı:
+## Takım Adı:"Farmageddon" 
 
 ## Takım Üye ve Rolleri:
 
@@ -17,8 +17,9 @@
 
 ## Oyun İsmi:
 
-"Farmageddon" veya "Joystick Harvest"
+"Joystick Harvest"
 Slogan: "Gaming was his escape... until it became his battlefield."
+
 
 
 
