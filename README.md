@@ -43,6 +43,7 @@ Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgi
 İki dünya. Tek çiftçi. Hayatta kalmak için oyna!
 
 # Pazarlama Stratejisi
+LEAN CANVAS LİNKİ: https://miro.com/app/board/uXjVIhXp1nY=/
 ![LEAN CANVAS](https://github.com/fundanedir1/grup23repository/blob/b915bc75c3660d39518f4a5b69b315e2b370b450/oyun_ici_gorseller/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-06%20130000.png?raw=true)
 
 
