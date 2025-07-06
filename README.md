@@ -1,18 +1,177 @@
 # grup23repository
+## Takım Adı:"Farmageddon" 
 
-Takım Adı:
+## Takım Üye ve Rolleri:
 
-Takım Üye ve Rolleri:
+| İsim | LinkedIn | Görev |
+|------|----------|-------|
+| Funda Ayas | [LinkedIn](https://www.linkedin.com/in/fundaayas/) | Scrum Master |
+| Ozan Yücel | [LinkedIn](https://www.linkedin.com/in/ozany%C3%BCcel/) | Project Manager |
+| Dilara Tatlıdede | [LinkedIn](https://www.linkedin.com/in/dilara-tatl%C4%B1dede-9197b4333/) | Developer |
+| Zehra Timurağaoğlu | [LinkedIn](https://www.linkedin.com/in/zehra-timura%C4%9Fao%C4%9Flu-9b89222a6/) | Developer |
+| Arda Bağ | [LinkedIn](https://www.linkedin.com/in/arda-ba%C4%9F-098530196/) | Developer |
 
 
 
-Oyun İsmi:
 
-Oyun Açıklaması:
 
-Oyun Özellikleri:
+## Oyun İsmi:
 
-Hedef Kitle:
+"Joystick Harvest"
+Slogan: "Gaming was his escape... until it became his battlefield."
 
-Product Backlog:
+
+
+
+## Oyunun Hikayesi:
+
+Derinlerde bir yerde, sıradan bir çiftliğin sessizliğini sadece rüzgarın uğultusu ve kuşların cıvıltısı bozar. Bu çiftliğin sahibi ise sıradışı bir çiftçidir. Gündüzleri domates eker, mısır sular, ambarını düzenler. Ama geceleri... işler değişir.
+
+Ambarının bir köşesinde eski ama çalışkan bir bilgisayarı vardır. Her gün tarlasını bitirip bilgisayarının başına geçtiğinde tek bir soru çıkar karşısına:
+"Zombie oyununa başlamak ister misin? Dünyan değişebilir."
+
+O "Evet"e bastığında... çiftliğin gerçekliği çatırdamaya başlar. Renkler solar, hava kararır. Tarlalar bulanık bir sisle kaplanır. Korkunç homurtular yaklaşır. Aynı çiftlik, ama bir kâbusun içinde...
+
+Artık görev bellidir: zombileri alt ederek çiftliğini koru. Her düşman, altın ya da nadir kristaller bırakabilir. Bu ganimetlerle hem oyun içindeki ilerlemeni sağlar, hem de “gerçek” dünyadaki çiftliğini daha güçlü hale getirirsin. Daha sağlam çitler, daha gelişmiş sulama sistemleri, hatta daha iyi silahlar…
+
+Ama dikkat et: Her oyuna giriş, dünyanı biraz daha geri dönülmez şekilde değiştirebilir...
+
+
+
+## Oyun Açıklaması:
+
+Gündüzleri tarlasını eken sıradan bir çiftçi, geceleri ambarındaki bilgisayarda zombi oyunu oynar. Aynı çiftlik bozulmuş bir dünyaya dönüşür ve zombiler saldırmaya başlar. Görevin: zombileri alt ederek altın ve kristal kazanmak, bu ganimetlerle gerçek çiftliğini geliştirmek.
+İki dünya. Tek çiftçi. Hayatta kalmak için oyna!
+
+# Pazarlama Stratejisi
+LEAN CANVAS LİNKİ: https://miro.com/app/board/uXjVIhXp1nY=/
+![LEAN CANVAS](https://github.com/fundanedir1/grup23repository/blob/b915bc75c3660d39518f4a5b69b315e2b370b450/oyun_ici_gorseller/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-06%20130000.png?raw=true)
+
+
+## 1. Hedef Kitle:
+
+* 13–30 yaş arası aksiyon, fps, hayatta kalma, zombi ve simülasyon çiftlik türlerine ilgi duyan genç ve genç yetişkin oyuncular.
+* Gündelik rutinlerle fantastik unsurların karışımını eğlenceli bulan oyuncular.
+* Retro oyun hayranları
+
+## 2. İlk Çıkış ve Yayılım Stratejisi
+**Steam Early Access / itch.io Yayını:** İlk geri bildirimleri toplamak için oyunun ilk sürümünü "indie" platformlarda yayınlayarak uygun fiyatla sunmak.
+**Tanıtım Videosu (Trailer):** 60 saniyelik enerjik bir fragman: Çiftlik rutinlerinden zombi dünyasına bilgisayarın içinden geçişi gösteren bir video. Mizahi ama gerilimli müzik ve slogan ile bitiş: "Gaming was his escape... until it became his battlefield."
+**Sosyal Medya Mini Videoları** TikTok & Instagram Reels & YouTube Shorts’ta “Zombi bastı, mısırları bırak!” tarzı komik 15 saniyelik esprili oyun içi videoları #zombiefarmer, #farmageddon, #gaminglife gibi hashtaglerle paylaşmak
+**Influencer İş Birlikleri** Mikro oyun yayıncılarına erken erişim kodları vermek ve mizah seviyesi yüksek, bağımsız oyunları inceleyen YouTuber’lara oynanış videosu yaptırmak ve farklı camialardan kitleleri niş olabilecek influencerlara oyunu oynatmak ve böylece farklı kitlelerin word of mouth ile oyunu konuşmasını sağlamak. 
+Sticker paketleri veya gif animasyonları ile Discord kitlesine yayılım sağlamak
+Reddit & indie game forumlarında geliştirici günlüğü (devlog) paylaşmak
+“Bu oyuna hangi sebzeleri ya da zombileri eklesek?” gibi interaktif sosyal medya anketleri
+
+## 3. Monetizasyon & Uzun Vadeli Plan
+* İlk versiyon ücretsiz/demo + tam sürüm ücretli
+* Kozmetik içerik (örneğin: zombi kostümü, çiftlik süsleri) satılabilir
+* Mevsimsel etkinlikler (Cadılar Bayramı zombileri, noel çifti gibi)
+  - Çiftlikteki sebzelerin de zombi olduğu bir cadılar bayramı özel bölümü eklenebilir.
+
+
+
+
+
+
+
+
+# Oyun Özellikleri ve Oynanış Özeti:
+
+### Gerçek Çiftlik Rutinleri:
+* Ürün ek, sulama yap, çiftlik görevlerini tamamla
+* Hasat yaparak XP ve bonus kazan
+* Bilgisayara gir, “zombi oyununa” başla
+
+### Zombi Oyunu Rutinleri:
+* Gerçek çiftlik artık bir savaş alanı
+* Zombilerle savaş, altın ve kristal topla
+
+### Gelişim Sistemi:
+* Topladığın altınlarla gerçek çiftliğini geliştir
+* Yeni ekipmanlar, silahlar, savunma çitleri inşa et
+* Oyunda geliştikçe çiftçinin dünyası da değişir
+
+### Temalar:
+* Gerçeklik & sanallık iç içe
+* Gündelik yaşamla kaosun çatışması
+* Korku-komedi karışımı bir atmosfer
+
+
+
+# SPRINT 1
+## Sprint Notları:
+
+**Beyin fırtınası ve Toplantı Notları:** https://docs.google.com/document/d/19O8CRycmSfqDxuZJJVqnpBqQOWE-YKwVRhb54RnuI7A/edit?usp=sharing
+
+Projemize ait mekanikler Product Backlog’a yazılmıştır. Trello üzerinden görev dağılımları ve ilerlemeler takip edilecektir. Her görev, takımın yetkinliğine ve sprint hedeflerine göre önceliklendirilmiş ve puanlanmıştır.
+
+## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
+
+**Puan tamamlama mantığı:**
+Toplamda 3 sprint planlanmış ve her birine 100’er puanlık iş yükü düşecek şekilde organize edilmiştir. Bu sprintte temel kurulum ve oyunun temel mekaniklerinin oluşturulması hedeflenmiştir.
+
+**Sprint görevleri:**
+Çiftlik mekanikleri, fps kontrolü, oyun hikâyesi, temel UI ve asset import süreçleri bu sprintte planlanmıştır. 
+
+**Daily Scrum:**
+Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir. Ekip üyeleri ayrıca WhatsApp grubu üzerinden gün içi iletişimi sağlamaktadır.
+
+
+**Sprint Board Update:**
+ Github ve Trello panosu aktif olarak kullanılmaktadır.
+ 
+**Github Repository:** https://github.com/fundanedir1/grup23repository
+
+**Trello Panosu:** https://trello.com/invite/b/6859746f89f00519e4268dce/ATTI400136ed909cc875e31180056483aa24A9C53FC4/trello-panom
+
+
+| Görev                                           | Puan |
+|------------------------------------------------|------|
+| Unity projesi kurulumu ve Github repository oluşturulması | 10   |
+| Ana assetlerin araştırılması ve import edilmesi | 15   |
+| FPS kontrol sistemi kurulumu                     | 15   |
+| Çiftlik temel mekanikleri (ekim, sulama, hasat) | 15   |
+| UI ve envanter tasarımının temel hali            | 10   |
+| Oyun hikâyesi, isim ve temanın netleştirilmesi   | 25   |
+| Ses efektlerinin araştırılması ve eklenmesi       | 10   |
+
+
+
+Trello panosundan da takip edileceği üzere "TO DO" ve "DONE" listelerinde yukarıdaki tabloda yer alan puanlamalarla tasklar görülmekte. "DONE" listesinde yer alan puanlı aktiviteler yukardaki aktivitelerden bitenleri gösteriyor. Hala "TO DO" da olanlar ise henüz üzerinde çalışılmaya başlanmayanları gösteriyor.
+Trello Board Görüntüsü:
+Güncelleme öncesi:
+![Trello 1](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102448.png)
+Güncelleme sonrası:
+![Trello 2](https://github.com/fundanedir1/grup23repository/blob/3eca43700d9eb63453759e1eb7c72418d385d008/trello%20ssleri/trello2.png?raw=true)
+
+## Ürün Durumu:
+
+* Oyunun adı, sloganı, hikayesi, tarzı, hedef kitlesi, temel mekanikleri belirlendi.
+* Oyunda kullanılabilecek temel ses efektleri, assetler, mekanikler araştırıldı
+* Unity’de çiftlik alanı temel olarak oluşturuldu.
+* Su fıskiyesi, mantar, zombi gibi temel oyun nesneleri belirlendi
+* Oyunun temel UI elementleri projeye eklendi
+
+
+## Oyun içi görseller:
+
+
+Game UI Başlangıç Görselleri:
+![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102537.png)
+![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102557.png)
+![Ekran Görüntüsü](https://raw.githubusercontent.com/fundanedir1/grup23repository/d5e95d20c79784d5a44f96f62c045a604ce2d1fb/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-05%20102610.png)
+
+Çiftlik Başlangıç Assetleri:
+![Sprint Görseli](https://raw.githubusercontent.com/fundanedir1/grup23repository/main/WhatsApp%20Image%202025-07-04%20at%2022.14.52.jpeg)
+![Sprint Ekran Görüntüsü 2](https://raw.githubusercontent.com/fundanedir1/grup23repository/main/WhatsApp%20Image%202025-07-04%20at%2022.40.45.jpeg)
+![Oyun İçi Görsel](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.41%20(1).jpeg?raw=true)
+![Oyun İçi Görsel 1](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.41%20(1).jpeg?raw=true)
+![Oyun İçi Görsel 2](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.41%20(2).jpeg?raw=true)
+![Oyun İçi Görsel 3](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.41%20(3).jpeg?raw=true)
+![Oyun İçi Görsel 4](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.41%20(4).jpeg?raw=true)
+![Oyun İçi Görsel 5](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.41.jpeg?raw=true)
+![Oyun İçi Görsel 6](https://github.com/fundanedir1/grup23repository/blob/c5031049a3977ee175b05cccbff9a547e6971dd0/oyun_ici_gorseller/WhatsApp%20Image%202025-07-05%20at%2021.07.42.jpeg?raw=true)
+
+
 

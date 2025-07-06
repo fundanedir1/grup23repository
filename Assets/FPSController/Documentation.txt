@@ -1,0 +1,90 @@
+Easy Peasy First Person Controller - User Guide
+
+CONTROLS
+- Movement: WASD or arrow keys
+- Sprint: Left Shift
+- Crouch: Left Control
+- Slide: Left Control while sprinting
+- Jump: Space
+
+INSPECTOR SETTINGS
+You can customize the FirstPersonController in the Inspector. Default values work well for most cases:
+- Movement Settings:
+  - Walk Speed: 3 (walking speed)
+  - Sprint Speed: 5 (sprinting speed)
+  - Crouch Speed: 1.5 (crouching speed)
+  - Air Control: 0.3 (air movement control)
+- Ability Settings:
+  - Can Jump: Enabled (toggle jumping)
+  - Can Sprint: Enabled (toggle sprinting)
+  - Can Crouch: Enabled (toggle crouching)
+  - Can Slide: Enabled (toggle sliding)
+- Crouch Settings:
+  - Crouch Height: 1 (crouch character height)
+  - Crouch Camera Height: 0.5 (crouch camera height)
+- Slide Settings:
+  - Slide Speed: 9 (slide speed)
+  - Slide Duration: 0.7 (slide duration, seconds)
+  - Slide Fov Boost: 5 (FOV increase during slide)
+  - Slide Tilt Angle: 5 (camera tilt angle)
+- Jump Settings:
+  - Jump Height: 1.5 (jump height)
+  - Coyote Time Enabled: Enabled (allows edge jumping)
+  - Coyote Time Duration: 0.2 (edge jump window, seconds)
+- HeadBob Settings:
+  - Bob Amount: 0.1 (head bob amplitude)
+  - Bob Speed: 2 (head bob speed)
+- Camera Settings:
+  - Mouse Sensitivity: 25 (mouse look sensitivity)
+  - Snappiness: 100 (mouse smoothing)
+  - Normal Fov: 60 (default field of view)
+  - Sprint Fov: 70 (sprint field of view)
+  - Fov Change Speed: 5 (FOV transition speed)
+- Physics Settings:
+  - Gravity: -9.81 (gravity force)
+  - Ground Distance: 0.1 (ground check distance)
+  - Ground Mask: Ground layer
+
+CUSTOMIZATION
+- Increase Sprint Speed (e.g., 7) for faster running.
+- Adjust Jump Height (e.g., 2) for higher jumps.
+- Set Bob Amount to 0 to disable head bobbing.
+- Change Mouse Sensitivity for faster/slower camera movement.
+- Extend Slide Duration (e.g., 1) for longer slides.
+
+TROUBLESHOOTING
+- Jumping not working?
+  - Ensure Gravity is -9.81.
+  - Check GroundCheck position: X=0, Y=-0.9, Z=0.
+  - Verify Ground Mask includes the ground layer.
+- No movement?
+  - Is the CharacterController enabled?
+  - Are WASD keys blocked by another system (e.g., UI)?
+- Camera issues?
+  - Confirm Player Camera and Camera Parent are assigned.
+  - Check Camera position: X=0, Y=0, Z=0.
+  - Check CameraParent position: X=0, Y=1, Z=0.
+- Sliding not working?
+  - Is Can Slide enabled?
+  - Press Left Control while sprinting.
+- Errors on play?
+  - Check if Ground Check, Player Camera, or Camera Parent are missing.
+  - Assign them in the Inspector.
+
+TESTING
+1. Start the game.
+2. Try the controls:
+   - WASD: You should move.
+   - Space: You should jump about 1.5 units.
+   - Left Shift: You should sprint, with FOV increasing to 70.
+   - Left Control: You should crouch, reducing height to 1.
+   - Left Control while sprinting: You should slide, speed reaching 9.
+3. Test in the Inspector:
+   - Set Jump Height to 3, jump higher.
+   - Disable Can Sprint, sprinting should stop.
+   - Set Bob Amount to 0.2, head bobbing should increase.
+   - Change Gravity to -15, you should fall faster.
+
+NOTES
+- Keep Ground Distance small (0.1) for efficient physics.
+- If issues persist, double-check the hierarchy and Inspector settings.
