@@ -7,7 +7,9 @@ public class PlayerD : MonoBehaviour
     public int maxHealth = 100;
     public int currentHealth;
 
-    public HealthBar healthBar; 
+    public HealthBar healthBar;
+    public PlayerAudioManager audioManager;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,7 +29,12 @@ public class PlayerD : MonoBehaviour
     }
     void TakeDamage(int damage)
     {
+        int oldHealth = currentHealth; 
+
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+
+        if (audioManager != null && currentHealth < oldHealth)
+            audioManager.OnHealthDecrease();
     }
 }
