@@ -249,7 +249,46 @@ Trello Board Görüntüsü:
 
 ## Ürün Durumu:
 
+* Oyunun haritası tamamen tamamlandı.
+
+* Kodlar ve assetler birleştirildi, geri bildirimler doğrultusunda küçük düzenlemeler yapılabilir.
+
+* Tutorial için temel mekanikler hazırlandı. Oyunculara hangi tuşlara basacakları ve hangi aksiyonları gerçekleştirebilecekleri oyun içinde anlatılacak.
+
+* Health Bar ve Coin Count sistemleri entegre edildi:
+
+- Oyuncu hasar aldığında sağlık barı azalıyor.
+
+- Coin objeleriyle çarpışıldığında coin sayısı artıyor.
+  
 ## Oyun içi görseller:
+
+<!-- Son büyük görsel -->
+<img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.55.jpeg" width="100%" />
+
+<p float="left">
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.31.jpeg" width="30%" />
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.32%20(1).jpeg" width="30%" />
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.32%20(2).jpeg" width="30%" />
+</p>
+
+<p float="left">
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.32%20(3).jpeg" width="30%" />
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.32.jpeg" width="30%" />
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.33%20(1).jpeg" width="30%" />
+</p>
+
+<p float="left">
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.33%20(2).jpeg" width="30%" />
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.33.jpeg" width="30%" />
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.34%20(1).jpeg" width="30%" />
+</p>
+
+<p float="left">
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.34%20(2).jpeg" width="30%" />
+  <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.34.jpeg" width="30%" />
+</p>
+
 
 # Sprint Review
 
@@ -286,7 +325,16 @@ Trello Board Görüntüsü:
 
 ## Ürün Durumu:
 
+
+
+
 ## Oyun içi görseller:
+
+
+
+
+
+
 
 # Sprint Review
 
