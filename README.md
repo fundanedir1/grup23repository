@@ -112,24 +112,14 @@ LEAN CANVAS LİNKİ: https://miro.com/app/board/uXjVIhXp1nY=/
 * Gündelik yaşamla kaosun çatışması
 * Korku-komedi karışımı bir atmosfer
 
-
-
-# SPRINT 1
 ## Sprint Notları:
 
 **Beyin Fırtınası ve Toplantı Notları:** https://docs.google.com/document/d/19O8CRycmSfqDxuZJJVqnpBqQOWE-YKwVRhb54RnuI7A/edit?usp=sharing
 
 Projemize ait mekanikler Product Backlog’a yazılmıştır. Trello üzerinden görev dağılımları ve ilerlemeler takip edilecektir. Her görev, takımın yetkinliğine ve sprint hedeflerine göre önceliklendirilmiş ve puanlanmıştır. Görevin sahibi görevi ile ilgili tanımı ve yaptığı güncellemeleri görev kartının içine açıklama olarak yazacaktır. Bu kısımlar trello boardlara girilerek kontrol edilebilir.
 
-## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
-
 **Puan tamamlama mantığı:**
 Toplamda 3 sprint planlanmış ve her birine 100’er puanlık iş yükü düşecek şekilde organize edilmiştir. Bu sprintte temel kurulum ve oyunun temel mekaniklerinin oluşturulması hedeflenmiştir. Ek olarak puanları belirlenmeyen yan görevler de Trello'ya eklenmiştir. Bu görevler de takım arkadaşlarımızın emeklerini içerdiğinden bir sonraki sprintte genel bir başlık altında puanlanabilir. Ek olarak Trello'ya bir sekme olarak eklenebilir: "Yan Görevler/Side Quests" gibi.
-
-**Sprint görevleri:**
-Puanlanan Görevler: Çiftlik mekanikleri;ses ve ışık efektleri araştırması;fps kontrolü;oyun hikâyesi, isim, ve temanın netleştirilmesi; temel UI ve asset import süreçleri bu sprintte planlanmıştır. 
-
-Yan Görevler: Unity ve GitHub repository kurulumu, görev dağılımını bitirmek, bootcamp kılavuzu ve sprint tanıtım videosunu izlemek.
 
 **Daily Scrum:**
 Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir. Ekip üyeleri ayrıca WhatsApp grubu üzerinden gün içi iletişimi sağlamaktadır.
@@ -144,6 +134,16 @@ Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir
 **Trello Panosu:** https://trello.com/invite/b/6859746f89f00519e4268dce/ATTI400136ed909cc875e31180056483aa24A9C53FC4/trello-panom
 
 
+# SPRINT 1
+
+## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
+
+1. Sprint sonunda tamamlanan puan: 100 
+
+**Sprint görevleri:**
+
+
+
 | Görev                                           | Puan |
 |------------------------------------------------|------|
 | Unity projesi kurulumu ve Github repository oluşturulması | 10   |
@@ -154,10 +154,10 @@ Daily Scrum toplantılarımız 2 günde bir Meets üzerinden gerçekleşmektedir
 | Oyun hikâyesi, isim ve temanın netleştirilmesi   | 25   |
 | Ses ve ışık efektlerinin araştırılması ve eklenmesi       | 10   |
 
-
+Yan Görevler: Unity ve GitHub repository kurulumu, görev dağılımını bitirmek, bootcamp kılavuzu ve sprint tanıtım videosunu izlemek.
 
 Trello panosundan da takip edileceği üzere "TO DO" ve "DONE" listelerinde yukarıdaki tabloda yer alan puanlamalarla tasklar görülmekte. "DONE" listesinde yer alan puanlı aktiviteler yukardaki aktivitelerden bitenleri gösteriyor. Hala "TO DO" da olanlar ise henüz üzerinde çalışılmaya başlanmayanları gösteriyor.
-1. Sprint sonunda tamamlanan puan: 100 (sprint review toplantısından sonra değişebilir)
+
 
 Trello Board Görüntüsü:
 Güncelleme öncesi:
@@ -218,5 +218,78 @@ Ancak geliştirilmesi gereken bazı noktalar da oldu:
 İletişimi daha güçlü ve sürdürülebilir kılmak için bu konularda hep birlikte daha özenli olmamız gerektiğini fark ettik. Bir sonraki sprintte daha organize ve verimli çalışmayı hedefliyoruz.
 
 
+
+
+# SPRINT 2 
+
+## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
+2. Sprint sonunda tamamlanan puan:
+
+**Sprint görevleri:**
+
+Puanlanan Görevler: 
+
+Yan Görevler: 
+
+
+
+| Görev                                           | Puan |
+|------------------------------------------------|------|
+| Envanter sisteminin temel işlevlerinin kodlanması | 20   |
+| Ekim sonrası bitki büyüme animasyonu ve zaman mekanizması | 15  |
+| Asset olarak bulunamayan sebzelerin modellenmesi ve sebze mekaniği | 15   |
+| Haritaya orman ve ağaçlandırma ekleme| 10   |
+| Oyun menüsü ve ayarlar (başlat, restart vs.Oyuncu canı ya da kaynak yönetimi (can, altın, kristal) - kodlanması | 15   |
+| zombi mekanikleri  | 10   |
+| UI öğelerinin sesli-görsel geri bildirimi - oyun müziği, battle müziği - ve koda eklenmesi | 5 |
+|Yan görevler ve düzeltmeler| 10 |
+
+
+Trello Board Görüntüsü:
+
+## Ürün Durumu:
+
+## Oyun içi görseller:
+
+# Sprint Review
+
+# Sprint Retrospective
+
+
+
+# SPRINT 3 için TASLAK
+
+## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
+2. Sprint sonunda tamamlanan puan:
+
+**Sprint görevleri:**
+
+Puanlanan Görevler: 
+
+Yan Görevler: 
+
+
+
+| Görev                                           | Puan |
+|------------------------------------------------|------|
+| Zombie mekanikleri - part 2 - enemy | 20   |
+| UI – bitki durumu (süre, sulandı mı?) göstergesi | 10  |
+| Geçiş efekti | 10   |
+| Logolar| 10   |
+| Build alma ve dışarıya export etme | 15   |
+| Kullanıcıdan geri bildirim alma | 10   |
+|Final sunumu| 15 |
+|Yan görevler ve düzeltmeler| 10 |
+
+
+Trello Board Görüntüsü:
+
+## Ürün Durumu:
+
+## Oyun içi görseller:
+
+# Sprint Review
+
+# Sprint Retrospective
 
 
