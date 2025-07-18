@@ -37,6 +37,8 @@ public class MenuController : MonoBehaviour
 
     public void RestartGame()
     {
+        Debug.Log("Restart butonuna basildi.");
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
