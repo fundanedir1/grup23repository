@@ -9,8 +9,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [Header("Süreler (saniye)")]
-    [SerializeField] private float dayLength = 180f;
-    [SerializeField] private float nightLength = 90f;
+    [SerializeField] private float dayLength = 10f;
+    [SerializeField] private float nightLength = 5f;
 
     // Güncel durum & sayaç
     public GameState CurrentState { get; private set; } = GameState.Day;

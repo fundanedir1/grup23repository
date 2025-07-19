@@ -10,15 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 720aa6dfd5808a6499903a1d78acfdf3, type: 3}
-  m_Name: Pumpkin
+  m_Name: Patato
   m_EditorClassIdentifier: 
   cropName: Pumpkin
-  seedPrefab: {fileID: 3964298102764401717, guid: 96a6be485a070864d827d01da8fb26e2, type: 3}
+  seedPrefab: {fileID: 5850635607746148329, guid: bb707755b85cddb45b732d68a7ae8c66, type: 3}
+  plantingSeconds: 2
   growthPrefabs:
-  - {fileID: 4199412529349879531, guid: a4fe42995ca9f95498d48f3dae27bf61, type: 3}
-  - {fileID: 496912059110818931, guid: 314323b28f86db84dbde599738a83c61, type: 3}
+  - {fileID: 5082048858549035404, guid: bd639d12d9d27e545b4d397b515cda91, type: 3}
   daysToRipe: 3
+  harvestSeconds: 1
+  harvestAmount: 3
+  harvestItem: {fileID: 11400000, guid: 46dfb5a36e12d344e95243731b2fc611, type: 2}
   sellPrice: 10
-  craftOutput: {fileID: 11400000, guid: 754cac0c7b3327047a92236481564cb2, type: 2}
+  craftOutput: {fileID: 0}
   spoilAfterDays: 1
   zombieDamageDuration: 10

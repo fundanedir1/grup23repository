@@ -12,12 +12,30 @@ public class CropData : ScriptableObject
     [Tooltip("Tarlaya ekildiğinde hangi prefab kullanılacak? (Seed modeli)")]
     public GameObject seedPrefab;
 
+
+
+    [Header("Planting")]
+    [Tooltip("Ekme işleminin saniye cinsinden süresi")]
+    public float plantingSeconds = 2f;
+
     [Header("Büyüme Aşamaları")]
     [Tooltip("0: Seed, 1..n: Ara aşamalar, Son: Olgun model. Spoiled modeli isteğe bağlı son dizi elemanı olabilir.")]
     public GameObject[] growthPrefabs;
 
     [Tooltip("Tam olgunlaşmaya kadar gereken GÜN sayısı. (Her sulanan gün 1 gün sayılır)")]
     [Min(1)] public int daysToRipe = 3;
+
+    [Tooltip("Hasat için gereken saniye")]
+    public float harvestSeconds = 1f;
+
+    [Header("Harvest")]
+    [Min(1)]
+    public int harvestAmount = 3;   // Olgunlaşınca kaç ItemData üretsin?
+    public ItemData harvestItem;    // Hangi item (sebze, meyve, vb.)
+
+    
+
+
 
     [Header("Ekonomi")]
     public int sellPrice = 10;
@@ -42,3 +60,4 @@ public class CropData : ScriptableObject
         return growthPrefabs[stageIndex];
     }
 }
+

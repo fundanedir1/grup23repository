@@ -15,7 +15,7 @@ public class ItemData : ScriptableObject
     [Tooltip("Yere atıldığında instantiate edilecek prefab (null ise generic prefab kullanılır)")]
     public GameObject worldPrefab;
 
-    [Header("Stack" )]
+    [Header("Stack")]
     [Min(1)] public int stackMax = 99; // Aynı yuvada taşınabilecek maksimum miktar
 
     [Header("Tohum Ayarları")]
@@ -24,4 +24,9 @@ public class ItemData : ScriptableObject
 
     [Tooltip("Tohumsa hangi CropData'yı eker? (Pumpkin, Corn vs.)")]
     public CropData cropRef; // isSeed=false iken boş bırakın
+    
+    [Header("Tohum Ayarları")]
+    [Tooltip("Bu alan NULL değilse; item tohum görevi görür ve bu CropData ekilir.")]
+    public CropData cropToPlant;
+    
 }

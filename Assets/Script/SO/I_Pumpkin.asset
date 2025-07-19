@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ca3c277d851db94ea45d2e61d6035fd, type: 3}
-  m_Name: NewItemData
+  m_Name: I_Pumpkin
   m_EditorClassIdentifier: 
-  itemName: New Item
-  icon: {fileID: 0}
-  worldPrefab: {fileID: 0}
-  stackMax: 99
+  itemName: Pumpkin
+  icon: {fileID: 21300000, guid: a97b71c43bec0d14980467742602a456, type: 3}
+  worldPrefab: {fileID: 335900621976337058, guid: e880e6cfa1753e94d86486c20a270bc0, type: 3}
+  stackMax: 2
   isSeed: 0
-  cropRef: {fileID: 0}
+  cropRef: {fileID: 11400000, guid: 21fb31f396335174fa433ddd492d676c, type: 2}
