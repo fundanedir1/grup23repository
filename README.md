@@ -222,6 +222,8 @@ Ancak geliştirilmesi gereken bazı noktalar da oldu:
 
 # SPRINT 2 
 
+Dailt scrum ssleri: https://drive.google.com/drive/u/1/folders/1jtaige2mEHgo0yO_RaUFNen0tqvz8Kve
+
 ## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
 2. Sprint sonunda tamamlanan puan: 75p
 
@@ -313,6 +315,14 @@ Trello Board Görüntüsü:
   <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.34%20(2).jpeg" width="30%" />
   <img src="https://raw.githubusercontent.com/fundanedir1/grup23repository/02179f71596685dcdea36bd116e2a7e28445f555/oyun_ici_gorseller/WhatsApp%20Image%202025-07-14%20at%2019.47.34.jpeg" width="30%" />
 </p>
+
+
+![Splash Screen](https://github.com/fundanedir1/grup23repository/blob/f18a88e0adadb07a61eb3f05f69fb5ec207729b2/oyun_ici_gorseller/splash.png)
+
+![Main Menu](https://github.com/fundanedir1/grup23repository/blob/f18a88e0adadb07a61eb3f05f69fb5ec207729b2/oyun_ici_gorseller/main.png)
+
+![Tutorial Screen](https://github.com/fundanedir1/grup23repository/blob/f18a88e0adadb07a61eb3f05f69fb5ec207729b2/oyun_ici_gorseller/tutorial.png)
+
 
 
 # Sprint Review
