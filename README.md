@@ -223,15 +223,11 @@ Ancak geliştirilmesi gereken bazı noktalar da oldu:
 # SPRINT 2 
 
 ## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
-2. Sprint sonunda tamamlanan puan:
+2. Sprint sonunda tamamlanan puan: 75p
+
+* Sprint görevlerinden bazıları ekip arkadaşımız Zehra ayrıldığı için bir dahaki sprinte atıldı ve görevlendirme Funda'ya verildi. Ekibimizden Ozan kendi görevlerini sprint 2'de bitirdiği için sprint 3'teki görevine geçti. O nedenle sprint 3'ten bu görevlerin yarısı kadar puan eklemeyi uygun gördük. 15 puan zombi mekanikleri - part 2'den, 5 puan da logolardan geldi.
 
 **Sprint görevleri:**
-
-Puanlanan Görevler: 
-
-Yan Görevler: 
-
-
 
 | Görev                                           | Puan |
 |------------------------------------------------|------|
@@ -240,7 +236,7 @@ Yan Görevler:
 | Asset olarak bulunamayan sebzelerin modellenmesi ve sebze mekaniği | 15   |
 | Haritaya orman ve ağaçlandırma ekleme| 10   |
 | Oyun menüsü ve ayarlar (başlat, restart vs.Oyuncu canı ya da kaynak yönetimi (can, altın, kristal) - kodlanması | 15   |
-| zombi mekanikleri  | 10   |
+| Zombi mekanikleri  | 10   |
 | UI öğelerinin sesli-görsel geri bildirimi - oyun müziği, battle müziği - ve koda eklenmesi | 5 |
 |Yan görevler ve düzeltmeler| 10 |
 
@@ -249,17 +245,33 @@ Trello Board Görüntüsü:
 
 ## Ürün Durumu:
 
-* Oyunun haritası tamamen tamamlandı.
+* Harita Tasarımı: Oyunun haritası tamamen tamamlandı. Tüm alanlar oyuna entegre edildi ve oynanabilir durumda.
 
-* Kodlar ve assetler birleştirildi, geri bildirimler doğrultusunda küçük düzenlemeler yapılabilir.
+* Kod ve Asset Entegrasyonu: Kodlama ve görsel varlıkların (asset) entegrasyonu sağlandı. Kullanıcı geri bildirimlerine bağlı olarak küçük çaplı düzenlemeler yapılabilir.
 
-* Tutorial için temel mekanikler hazırlandı. Oyunculara hangi tuşlara basacakları ve hangi aksiyonları gerçekleştirebilecekleri oyun içinde anlatılacak.
+* Tutorial Sistemi: Temel öğretici (tutorial) mekanikleri hazırlandı. Oyunculara oyun içindeki kontroller (tuşlar) ve gerçekleştirebilecekleri aksiyonlar açık bir şekilde aktarılacak.
 
-* Health Bar ve Coin Count sistemleri entegre edildi:
+* Health ve Coin Sistemleri:
 
-- Oyuncu hasar aldığında sağlık barı azalıyor.
+- Oyuncu hasar aldığında sağlık barı (Health Bar) gerçek zamanlı olarak azalıyor.
 
-- Coin objeleriyle çarpışıldığında coin sayısı artıyor.
+- Coin objeleriyle çarpışıldığında, coin sayısı artıyor ve bu durum ekranda gösteriliyor.
+
+* Envanter Sistemi:
+
+- Oyuncu, F tuşu ile nesne alabiliyor, G tuşu ile bırakabiliyor.
+
+- Mouse sağ tık ile nesne fırlatılabiliyor. Tuş ne kadar uzun basılı tutulursa nesne o kadar uzağa fırlıyor. Bu güç miktarını göstermek için bir bar eklendi.
+
+- Envanterdeki eşyalar arasında 1-9 tuşlarıyla ya da mouse scroll ile geçiş yapılabiliyor.
+
+* Tarla ve Hasat Mekaniği:
+
+- Oyuncu tarlaya yaklaştığında bir kullanıcı arayüzü (UI) beliriyor.
+
+- Eğer oyuncunun elinde tohum (seed) varsa ve E tuşuna basılırsa, toprak üzerine ekim gerçekleştiriliyor.
+
+- Her bitki için farklı ekim ve hasat süreleri tanımlanması planlanıyor.
   
 ## Oyun içi görseller:
 
