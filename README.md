@@ -313,7 +313,50 @@ Trello Board Görüntüsü:
 
 # Sprint Review
 
+* Toplantılarda daha aktif konuşmaya başladık, bu da takım içi iletişimi güçlendirdi.
+
+* Oyun haritası ve kodların ortaya çıkması motivasyonumuzu artırdı; oyun artık somut bir hâl almaya başladı.
+
+* Zehra, zaman problemi nedeniyle projeden ayrılmak zorunda kaldı ve onun görevine ait puan alınamadı.
+
+* Trello board'una görsellerle birlikte yapılan görevlerin özetlerini eklemeye başladık.
+
+* Görevlerin altına alt görevler ve bu alt görevler için alt puanlar belirleyerek işi daha net planladık.
+
+* Daily toplantılarımızı WhatsApp üzerinden gerçekleştirmeye devam ettik; bu paylaşımlar artık daha fazla bilgi içeriyor.
+
+* Sprint boyunca görevlerimizin bazıları diğer sprintlerde de devam edecek şekilde planlandı.
+
+* Toplantı günleri kişisel programlara göre değişse de takvim esnekliğini sağladık ve uyum gösterdik.
+
+
+
+
 # Sprint Retrospective
+
+* İyi Gidenler:
+
+- Takım içi iletişim ve motivasyon artışı.
+
+- Trello'nun daha aktif ve düzenli kullanılması.
+
+- WhatsApp daily'lerinin daha bilgilendirici hâle gelmesi.
+
+- Yeni bilgiler öğrenilmesi ve bilgi paylaşımının artması.
+
+- Gelecek sprintten de görev tamamlanması
+
+* Geliştirilmesi Gerekenler:
+
+- Görevlerin bazıları sprint içinde tamamlanamıyor; bu nedenle sprint planları daha gerçekçi yapılmalı.
+
+- Projede yer alan branch'ler hâlâ birleşmedi; tüm sistemi entegre ve çalışan bir hâlde görebilmek en çok ihtiyaç duyduğumuz şeydi.
+
+* Öğrendiklerimiz:
+
+- Görevlerin bir sprintte bitecek şekilde değil, devam edecek yapıda planlanması gerekebileceğini fark ettik.
+
+- Trello'da alt görevler ve alt puanlarla daha detaylı planlama yapılmasının süreci kolaylaştırdığını gördük.
 
 
 
