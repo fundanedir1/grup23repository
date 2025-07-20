@@ -281,6 +281,10 @@ Trello Board Görüntüsü:
 - Eğer oyuncunun elinde tohum (seed) varsa ve E tuşuna basılırsa, toprak üzerine ekim gerçekleştiriliyor.
 
 - Her bitki için farklı ekim ve hasat süreleri tanımlanması planlanıyor.
+
+* Zombi Mekanikleri:
+  
+- 3 farklı zombi ile oluşturduğumuz düşman mekaniklerini kullandık, artık çiftçinin üstüne doğru gelen bir zombi ordusu var ve yakınlaştıklarında çiftçiye saldırıyorlar.
   
 ## Oyun içi görseller:
 
