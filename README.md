@@ -242,6 +242,15 @@ Ancak geliştirilmesi gereken bazı noktalar da oldu:
 
 
 Trello Board Görüntüsü:
+![Görsel 1](https://github.com/fundanedir1/grup23repository/blob/ee86cb5aeae30c38fe23a4f81e14cfe97031b2cf/oyun_ici_gorseller/Ekran%20g%C3%B6r%C3%BCnt%C3%BCs%C3%BC%202025-07-16%20175148.png)
+![Görsel 2](https://github.com/fundanedir1/grup23repository/blob/ee86cb5aeae30c38fe23a4f81e14cfe97031b2cf/oyun_ici_gorseller/aaaaa.png)
+
+<p align="center">
+  <img src="https://github.com/fundanedir1/grup23repository/blob/ee86cb5aeae30c38fe23a4f81e14cfe97031b2cf/oyun_ici_gorseller/b.png" width="250"/>
+  <img src="https://github.com/fundanedir1/grup23repository/blob/ee86cb5aeae30c38fe23a4f81e14cfe97031b2cf/oyun_ici_gorseller/c.png" width="250"/>
+  <img src="https://github.com/fundanedir1/grup23repository/blob/ee86cb5aeae30c38fe23a4f81e14cfe97031b2cf/oyun_ici_gorseller/d.png" width="250"/>
+</p>
+
 
 ## Ürün Durumu:
 
