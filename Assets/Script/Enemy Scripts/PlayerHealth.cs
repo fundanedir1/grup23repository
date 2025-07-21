@@ -2,29 +2,21 @@ using UnityEngine;
 using UnityEngine.Rendering.PostProcessing;
 using System.Collections;
 
-
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private float hitPoints = 500f;
- 
-
     private float maxHealth = 500f;
     
+    void Start()
+    {
+        
+    }
 
+    void Update()
+    {
+        
+    }
     
-
-        void Start()
-    {
-        
-       
-        
-    }
-
-       void Update()
-    {
-        
-  
-    }
     public float GetHitPoints()
     {
         return hitPoints;
@@ -32,7 +24,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void Heal(float amount)
     {
-        hitPoints += amount;
+        hitPoints = Mathf.Clamp(hitPoints + amount, 0f, maxHealth);
         Debug.Log("Player healed. Current HP: " + hitPoints);
     }
 
@@ -48,7 +40,7 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-      private void UpdatePostProcessingEffects()
+    private void UpdatePostProcessingEffects()
     {
       
     }
