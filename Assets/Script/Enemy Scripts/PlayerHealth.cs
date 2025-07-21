@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering;
 using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
@@ -38,11 +38,6 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log("Player is dead");
             Die();
         }
-    }
-
-    private void UpdatePostProcessingEffects()
-    {
-      
     }
 
     private void Die()
