@@ -8,6 +8,10 @@ public class ChestController : MonoBehaviour
     public bool isOpen = false;
     public float uiDelayAfterClose = 1.5f;
     public GameObject interactUI; // "E'ye bas" yazısı
+    [Header("Chest Items")]
+    public GameObject[] chestItems;
+    private bool hasBeenOpened = false; // Yeni değişken
+    
     
     [Header("Mesafe Ayarları")]
     public float interactDistance = 3f; // Kaç metre yakından etkileşim
@@ -24,6 +28,9 @@ public class ChestController : MonoBehaviour
             player = playerObj.transform;
         else
             Debug.LogError("Player bulunamadı! Player objesine 'Player' tag'i eklenmiş mi?");
+        
+        // Başlangıçta itemları gizle (chest kapalı başlıyor)
+        UpdateItemVisibility();
     }
 
     void Update()
@@ -88,11 +95,37 @@ public class ChestController : MonoBehaviour
             Debug.LogError("Animator null! Inspector'da Animator atanmış mı?");
         }
 
+        // Item görünürlüğünü güncelle
+        UpdateItemVisibility();
+
         if (!isOpen)
         {
             // Sandık kapatıldıktan sonra UI biraz geç gelsin
             StartCoroutine(ShowUIDelayed());
         }
+    }
+
+    void UpdateItemVisibility()
+    {
+        // Eğer sandık hiç açılmamışsa
+        if (!hasBeenOpened)
+        {
+            foreach (GameObject item in chestItems)
+            {
+                if (item != null)
+                {
+                    item.SetActive(isOpen);
+                }
+            }
+        
+            // İlk kez açıldıysa işaretle
+            if (isOpen)
+            {
+                hasBeenOpened = true;
+                Debug.Log("Sandık ilk kez açıldı! Artık itemlar hep görünür kalacak.");
+            }
+        }
+        // Sandık daha önce açıldıysa itemlar hep görünür kalır (hiçbir şey yapma)
     }
 
     IEnumerator ShowUIDelayed()
