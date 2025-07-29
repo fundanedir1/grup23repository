@@ -339,7 +339,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023638972}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
         m_MethodName: SelectSeed
         m_Mode: 3
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023638972}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
         m_MethodName: SelectSeed
         m_Mode: 3
@@ -753,6 +753,9 @@ MonoBehaviour:
   - {fileID: 608458651}
   - {fileID: 1120352067}
   fpsControllerScript: {fileID: 1697702083}
+  ileriButton: {fileID: 0}
+  geriButton: {fileID: 0}
+  closeButton: {fileID: 0}
 --- !u!1 &608458651
 GameObject:
   m_ObjectHideFlags: 0
@@ -2127,60 +2130,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1697702082}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1023638971
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1023638973}
-  - component: {fileID: 1023638972}
-  m_Layer: 0
-  m_Name: InventoryManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1023638972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023638971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0834e3a5616507f45af3664ff63a04ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  seeds:
-  - seedName: 0kabak
-    icon: {fileID: 21300000, guid: 8db812cdee0ff412c94a9c8b74e0b199, type: 3}
-    plantPrefab: {fileID: 5808762747920353218, guid: 1cf8ce11929d19e4698c429008616a1f, type: 3}
-  - seedName: 1domates
-    icon: {fileID: 21300000, guid: bb7faf4c850ef48cdb33c2bd17737619, type: 3}
-    plantPrefab: {fileID: 906453245972585529, guid: 00caac431abf7f948a559001b86d5377, type: 3}
-  - seedName: 2havuc
-    icon: {fileID: 21300000, guid: 1fbdfb9bf6c2e4397a1d62eed589ec1f, type: 3}
-    plantPrefab: {fileID: 7432622799770361029, guid: 51a67f3bc21583a409feb699124a9203, type: 3}
---- !u!4 &1023638973
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023638971}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 955.99115, y: 714.53546, z: -8.367982}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1120352067
 GameObject:
   m_ObjectHideFlags: 0
@@ -2403,7 +2352,6 @@ GameObject:
   - component: {fileID: 1697702080}
   - component: {fileID: 1697702079}
   - component: {fileID: 1697702078}
-  - component: {fileID: 1697702084}
   - component: {fileID: 1697702083}
   m_Layer: 0
   m_Name: Player
@@ -2542,20 +2490,6 @@ MonoBehaviour:
   moveSpeed: 5
   mouseSensitivity: 2
   playerCamera: {fileID: 963194228}
---- !u!114 &1697702084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1697702076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c1cb11030443c7419acc0532450c574, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryManager: {fileID: 1023638972}
-  interactDistance: 3
 --- !u!1 &1840929416
 GameObject:
   m_ObjectHideFlags: 0
@@ -3014,7 +2948,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023638972}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
         m_MethodName: SelectSeed
         m_Mode: 3
@@ -3074,5 +3008,4 @@ SceneRoots:
   - {fileID: 1928662038}
   - {fileID: 937200466}
   - {fileID: 477626342}
-  - {fileID: 1023638973}
   - {fileID: 426294352}
