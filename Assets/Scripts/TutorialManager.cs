@@ -3,129 +3,94 @@ using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour
 {
-    public GameObject[] pages;        // Tutorial sayfalari (UI Panelleri)
-    private int currentPage = 0;
+    public GameObject[] pages;               // UI sayfaları
+    public Button nextButton;
+    public Button prevButton;
+    public Button closeButton;
 
-    // BURAYI EKLE: SimpleFPS scriptine referans
-    public SimpleFps fpsControllerScript; // Inspector'dan atanacak
+    private int currentPage = 0;
 
     private const string TutorialCompletedKey = "TutorialCompleted";
     private const string TutorialSeenBeforeKey = "TutorialSeenBefore";
 
-    public GameObject ileriButton;
-    public GameObject geriButton;
-    public GameObject closeButton;
-
-
     void Start()
     {
+        // TEST AMAÇLI: Her play'de tutorial sıfırlansın
+        PlayerPrefs.DeleteKey(TutorialCompletedKey);
+        PlayerPrefs.DeleteKey(TutorialSeenBeforeKey);
 
+        Debug.Log("TutorialManager başlatıldı.");
 
-        // Tutorial daha önce tamamlanmamış ve daha önce gösterilmemişse aç
+        // Tüm sayfaları pasifleştir
+        foreach (GameObject page in pages)
+            page.SetActive(false);
+
+        // Eğer kullanıcı daha önce görmemişse tutorial'ı başlat
         if (PlayerPrefs.GetInt(TutorialCompletedKey, 0) == 0 &&
             PlayerPrefs.GetInt(TutorialSeenBeforeKey, 0) == 0)
         {
             OpenTutorial();
-            PlayerPrefs.SetInt(TutorialSeenBeforeKey, 1);
-            PlayerPrefs.Save();
         }
         else
         {
-            // Tutorial açılmayacak, sayfaları kapat
-            foreach (var page in pages)
-            {
-                if (page != null)
-                    page.SetActive(false);
-            }
-            Time.timeScale = 1f; // Oyun devam etsin
+            Debug.Log("Tutorial daha önce tamamlanmış.");
         }
 
-
+        // Butonlara fonksiyon bağla
+        nextButton.onClick.AddListener(NextPage);
+        prevButton.onClick.AddListener(PreviousPage);
+        closeButton.onClick.AddListener(CloseTutorial);
     }
 
-    public void OpenTutorial()
+    void OpenTutorial()
     {
+        Debug.Log("Tutorial başlatılıyor...");
         currentPage = 0;
-        // Sayfaları ilk sayfa haric kapat, sadece ilk sayfayı aç
-        for (int i = 0; i < pages.Length; i++)
-        {
-            if (pages[i] != null)
-                pages[i].SetActive(i == currentPage);
-        }
-
-        Time.timeScale = 0f; // Oyunu durdur
-
-        // Cursor ayarları
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-
-        // FPS controller kapat
-        if (fpsControllerScript != null)
-            fpsControllerScript.SetInputEnabled(false);
-
-        // İleri, geri ve kapatma butonlarını aç
-        ileriButton.SetActive(true);
-        geriButton.SetActive(true);
-        closeButton.SetActive(true);
+        pages[currentPage].SetActive(true);
+        PlayerPrefs.SetInt(TutorialSeenBeforeKey, 1);
     }
 
-    // Sonraki sayfaya gecer
-    public void NextPage()
+    void NextPage()
     {
+        Debug.Log($"NextPage çağrıldı. Şu anki sayfa: {currentPage}");
+
         if (currentPage < pages.Length - 1)
         {
-            if (pages[currentPage] != null)
-                pages[currentPage].SetActive(false);
-
+            pages[currentPage].SetActive(false);
             currentPage++;
-
-            if (pages[currentPage] != null)
-                pages[currentPage].SetActive(true);
+            pages[currentPage].SetActive(true);
+            Debug.Log($"Yeni sayfa: {currentPage}");
         }
-       
+        else
+        {
+            Debug.Log("Son sayfaya ulaşıldı. Tutorial kapatılıyor...");
+            CloseTutorial();
+        }
     }
 
-    // Onceki sayfaya doner
-    public void PrevPage()
+    void PreviousPage()
     {
+        Debug.Log($"PreviousPage çağrıldı. Şu anki sayfa: {currentPage}");
+
         if (currentPage > 0)
         {
-            if (pages[currentPage] != null)
-                pages[currentPage].SetActive(false);
-
+            pages[currentPage].SetActive(false);
             currentPage--;
-
-            if (pages[currentPage] != null)
-                pages[currentPage].SetActive(true);
+            pages[currentPage].SetActive(true);
+            Debug.Log($"Geri gidildi. Yeni sayfa: {currentPage}");
+        }
+        else
+        {
+            Debug.Log("İlk sayfadasın, geri gidemezsin.");
         }
     }
 
-    // Tutorial'i kapatir ve oyunu devam ettirir
-    public void CloseTutorial()
+    void CloseTutorial()
     {
-        // Sayfaları kapat
-        foreach (var page in pages)
-        {
-            if (page != null)
-                page.SetActive(false);
-        }
+        Debug.Log("Tutorial kapatılıyor.");
+        foreach (GameObject page in pages)
+            page.SetActive(false);
 
-        Time.timeScale = 1f; // Oyunu devam ettir
-
-        // Cursor ayarları
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
-        // FPS controller aç
-        if (fpsControllerScript != null)
-            fpsControllerScript.SetInputEnabled(true);
-
-        // Tutorial tamamlandı olarak işaretle
         PlayerPrefs.SetInt(TutorialCompletedKey, 1);
-        PlayerPrefs.Save();
-
-        ileriButton.SetActive(false);
-        geriButton.SetActive(false);
-        closeButton.SetActive(false);
     }
 }

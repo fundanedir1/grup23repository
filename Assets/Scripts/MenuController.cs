@@ -32,7 +32,7 @@ public class MenuController : MonoBehaviour
         PlayerPrefs.SetInt(HasPlayedKey, 1);   
         PlayerPrefs.Save();
 
-        SceneManager.LoadScene("GameScene");   
+        SceneManager.LoadScene("Map");   
     }
 
     public void RestartGame()
