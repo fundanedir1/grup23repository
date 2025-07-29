@@ -1,27 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] float hitPoints = 100f;
-   // [SerializeField] Slider healthSlider;//
-
-    
-    
 
     public void GetDamage(float damage)
     {
         hitPoints -= damage;
+
         if (hitPoints <= 0)
         {
-            Destroy(gameObject);
+            StartCoroutine(DeathDelay());
         }
     }
-    private void Update()
+
+    private System.Collections.IEnumerator DeathDelay()
     {
-        //healthSlider.value = hitPoints;//
+        yield return new WaitForSeconds(0.03f); 
+        Destroy(gameObject);
     }
-    
 }
