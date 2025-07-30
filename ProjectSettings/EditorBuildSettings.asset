@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenesf/MainMenuScene.unity
     guid: 5a0748118dd9d714d83236eb8df6ae95
   - enabled: 1
-    path: Assets/Dilara_Folder/Scenes/Map.unity
+    path: Assets/Dilara_Folder/Scenes/Map_Funda.unity
     guid: 91a74f040b9a5fc44bba2a0d994a0fda
   - enabled: 1
     path: Assets/Scenesf/SettingsScene.unity
