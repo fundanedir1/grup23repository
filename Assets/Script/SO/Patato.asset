@@ -16,10 +16,12 @@ MonoBehaviour:
   seedPrefab: {fileID: 5850635607746148329, guid: bb707755b85cddb45b732d68a7ae8c66, type: 3}
   plantingSeconds: 2
   growthPrefabs:
-  - {fileID: 5082048858549035404, guid: bd639d12d9d27e545b4d397b515cda91, type: 3}
+  - {fileID: 1423769881756277806, guid: 437bfaa5caf8bff42bfa8fef60363c5e, type: 3}
+  - {fileID: 1423769881756277806, guid: d98e02e92de6b4d40a23cebf4e79af30, type: 3}
+  - {fileID: 1423769881756277806, guid: f5f1862804d11f74da546468e85f8940, type: 3}
   daysToRipe: 3
   harvestSeconds: 1
-  harvestAmount: 3
+  harvestAmount: 5
   harvestItem: {fileID: 11400000, guid: 46dfb5a36e12d344e95243731b2fc611, type: 2}
   sellPrice: 10
   craftOutput: {fileID: 0}

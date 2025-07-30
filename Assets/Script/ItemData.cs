@@ -25,6 +25,9 @@ public class ItemData : ScriptableObject
     [Tooltip("Tohumsa hangi CropData'yı eker? (Pumpkin, Corn vs.)")]
     public CropData cropRef; // isSeed=false iken boş bırakın
     
+    [Header("Economy")]
+    public int sellPrice = 0;   // 0 → satılamaz
+
     [Header("Tohum Ayarları")]
     [Tooltip("Bu alan NULL değilse; item tohum görevi görür ve bu CropData ekilir.")]
     public CropData cropToPlant;

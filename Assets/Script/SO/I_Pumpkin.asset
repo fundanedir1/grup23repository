@@ -18,3 +18,5 @@ MonoBehaviour:
   stackMax: 2
   isSeed: 0
   cropRef: {fileID: 11400000, guid: 21fb31f396335174fa433ddd492d676c, type: 2}
+  sellPrice: 11
+  cropToPlant: {fileID: 0}
