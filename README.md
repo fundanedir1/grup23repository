@@ -1,5 +1,8 @@
 # grup23repository
 # Takım Adı:"Farmageddon" 
+![Team Logo](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-30%20at%2016.47.51.jpeg?raw=true)
+
+![Game Logo](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-25%20at%2016.42.08.jpeg?raw=true)
 
 ### Takım Üye ve Rolleri:
 
@@ -407,6 +410,28 @@ Trello Board Görüntüsü:
 
 
 ## Oyun içi görseller:
+
+## Oyun İçi Görseller
+
+![Görsel 1](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-17%20at%2016.56.13.jpeg?raw=true)
+
+
+
+![Görsel 3](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-29%20at%2015.27.18.jpeg?raw=true)
+
+![Görsel 4](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-29%20at%2015.49.25.jpeg?raw=true)
+
+![Görsel 5](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-29%20at%2017.15.24.jpeg?raw=true)
+
+![Görsel 6](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-29%20at%2020.32.34.jpeg?raw=true)
+
+![Görsel 7](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-29%20at%2021.22.54.jpeg?raw=true)
+
+![Görsel 8](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-29%20at%2023.01.43.jpeg?raw=true)
+
+![Görsel 9](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-29%20at%2023.35.59.jpeg?raw=true)
+
+
 
 
 
