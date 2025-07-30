@@ -10,7 +10,7 @@ ModelImporter:
       name: PandaMat
     second: {fileID: 2100000, guid: 293fedf4ae72d0f42a326f700888b9f9, type: 2}
   materials:
-    materialImportMode: 0
+    materialImportMode: 2
     materialName: 0
     materialSearch: 1
     materialLocation: 1
