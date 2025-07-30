@@ -1,8 +1,7 @@
 # grup23repository
 # Takım Adı:"Farmageddon" 
-![Team Logo](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-30%20at%2016.47.51.jpeg?raw=true)
 
-![Game Logo](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-25%20at%2016.42.08.jpeg?raw=true)
+![Team Logo](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-25%20at%2016.42.08.jpeg?raw=true)
 
 ### Takım Üye ve Rolleri:
 
@@ -21,6 +20,8 @@
 ### Oyun İsmi:
 
 "Joystick Harvest"
+![Game Logo](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-30%20at%2016.47.51.jpeg?raw=true)
+
 ### Slogan: 
 
 "Gaming was his escape... until it became his battlefield."
