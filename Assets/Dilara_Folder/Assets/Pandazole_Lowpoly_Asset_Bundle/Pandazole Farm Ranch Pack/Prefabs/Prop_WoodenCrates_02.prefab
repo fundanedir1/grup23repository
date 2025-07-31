@@ -5,6 +5,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: b8b8c9b9f068a8c4daf16a658815dec5, type: 3}
@@ -56,23 +57,36 @@ PrefabInstance:
       value: Prop_WoodenCrates_02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b8b8c9b9f068a8c4daf16a658815dec5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1643586172767761884}
   m_SourcePrefab: {fileID: 100100000, guid: b8b8c9b9f068a8c4daf16a658815dec5, type: 3}
 --- !u!1 &6950454982641813540 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b8b8c9b9f068a8c4daf16a658815dec5, type: 3}
   m_PrefabInstance: {fileID: 7833325639891989877}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &7363269624297752414
-MeshCollider:
+--- !u!65 &1643586172767761884
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6950454982641813540}
   m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
   m_IsTrigger: 0
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1295896054862040675, guid: b8b8c9b9f068a8c4daf16a658815dec5, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 1.4363106, y: 0.7182497, z: 0.9190713}
+  m_Center: {x: 0, y: 0.35904187, z: 0}
