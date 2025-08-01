@@ -48,6 +48,13 @@ public class TutorialManager : MonoBehaviour
         currentPage = 0;
         pages[currentPage].SetActive(true);
         PlayerPrefs.SetInt(TutorialSeenBeforeKey, 1);
+
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+
+
+        Time.timeScale = 1f;
+
     }
 
     public void NextPage()
