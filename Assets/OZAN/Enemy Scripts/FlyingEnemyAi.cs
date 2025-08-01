@@ -10,17 +10,37 @@ public class FlyingEnemyAi : MonoBehaviour
     [SerializeField] private float flySpeed = 5f;
     [SerializeField] private float attackDistance = 2f;
 
+    [Header("Death Fall Settings")]
+    [SerializeField] private float fallSpeed = 10f;
+
     float targetDistance = Mathf.Infinity;
     bool isProvoked = false;
     Animator animator;
+    Rigidbody rb;
+    EnemyHealth enemyHealth;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody>();
+        enemyHealth = GetComponent<EnemyHealth>();
+        
+        // Başlangıçta Rigidbody'yi kinematic yap (fizik simülasyonu olmasın)
+        if (rb != null)
+        {
+            rb.isKinematic = true;
+        }
     }
 
     void Update()
     {
+        // EnemyHealth scriptinden ölüm durumunu kontrol et
+        if (enemyHealth != null && enemyHealth.IsDead())
+        {
+            HandleDeathFall();
+            return;
+        }
+
         targetDistance = Vector3.Distance(transform.position, target.position);
 
         if (isProvoked)
@@ -96,15 +116,62 @@ public class FlyingEnemyAi : MonoBehaviour
         Debug.Log(name + " has stopped chasing " + target.name);
     }
 
+    // Ölüm durumunda yere düşme işlemi
+    private void HandleDeathFall()
+    {
+        // İlk kez ölüm durumu tespit edildiğinde
+        if (rb != null && rb.isKinematic)
+        {
+            // Rigidbody'yi aktive et (fizik simülasyonu başlasın)
+            rb.isKinematic = false;
+            rb.useGravity = true;
+            
+            // AI davranışlarını durdur
+            isProvoked = false;
+            
+            Debug.Log(name + " has died and is falling!");
+        }
+
+        // Eğer Rigidbody yoksa manuel olarak düşür
+        if (rb == null)
+        {
+            transform.position += Vector3.down * fallSpeed * Time.deltaTime;
+        }
+
+        // Yere çarptıysa duraksama efekti (opsiyonel)
+        CheckGroundImpact();
+    }
+
+    // Yere çarpma kontrolü
+    private void CheckGroundImpact()
+    {
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.2f))
+        {
+            if (hit.collider.CompareTag("Ground") || hit.collider.name.ToLower().Contains("ground"))
+            {
+                // Yere çarptı, hızını azalt
+                if (rb != null && rb.velocity.magnitude > 1f)
+                {
+                    rb.velocity *= 0.3f; // Yavaşlat
+                }
+            }
+        }
+    }
+
     // Debug için Gizmos
     void OnDrawGizmosSelected()
     {
-        // Takip alanı
-        Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, chasingRadius);
-        
-        // Saldırı alanı
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, attackDistance);
+        // Sadece canlıyken gizmos göster
+        if (enemyHealth == null || !enemyHealth.IsDead())
+        {
+            // Takip alanı
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, chasingRadius);
+            
+            // Saldırı alanı
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, attackDistance);
+        }
     }
 }
