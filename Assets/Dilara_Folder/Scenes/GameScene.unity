@@ -1157,9 +1157,8 @@ MonoBehaviour:
   pages:
   - {fileID: 1522647784}
   - {fileID: 433746711}
-  FPSController: {fileID: 0}
-  ileriButton: {fileID: 1943290350}
-  geriButton: {fileID: 1294412151}
+  nextButton: {fileID: 0}
+  prevButton: {fileID: 0}
   closeButton: {fileID: 1209251988}
 --- !u!4 &670412341
 Transform:

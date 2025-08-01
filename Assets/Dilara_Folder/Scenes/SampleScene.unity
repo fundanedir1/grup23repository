@@ -752,9 +752,8 @@ MonoBehaviour:
   pages:
   - {fileID: 608458651}
   - {fileID: 1120352067}
-  fpsControllerScript: {fileID: 1697702083}
-  ileriButton: {fileID: 0}
-  geriButton: {fileID: 0}
+  nextButton: {fileID: 0}
+  prevButton: {fileID: 0}
   closeButton: {fileID: 0}
 --- !u!1 &608458651
 GameObject:
