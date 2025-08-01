@@ -1,54 +1,55 @@
 using UnityEngine;
-using UnityEngine.UI;
 using System.Collections;
 
 public class ChestController : MonoBehaviour
 {
-    public Animator animator;
-    public bool isOpen = false;
-    public float uiDelayAfterClose = 1.5f;
-    public GameObject interactUI; // "E'ye bas" yazısı
-    [Header("Chest Items")]
-    public GameObject[] chestItems;
-    private bool hasBeenOpened = false; // Yeni değişken
-    
-    
-    [Header("Mesafe Ayarları")]
-    public float interactDistance = 3f; // Kaç metre yakından etkileşim
+    [Header("Sandık Ayarları")]
+    [SerializeField] private int chestPrice = 1;
+    [SerializeField] private GameObject[] itemPool;
+    [SerializeField] private Transform[] itemSpawnPoints; // 🔁 Artık dizi oldu!
+    [SerializeField] private float interactDistance = 3f;
+
+    [Header("UI ve Görsel")]
+    [SerializeField] private Animator animator;
+    [SerializeField] private GameObject interactUI;
+    [SerializeField] private GameObject notEnoughMoneyUI;
+    [SerializeField] private float moneyWarningDuration = 2f;
+    [SerializeField] private float uiDelayAfterClose = 1.5f;
 
     private bool isPlayerNear = false;
     private bool uiLocked = false;
+    private bool isOpen = false;
     private Transform player;
 
     void Start()
     {
-        // Player'ı bul
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
             player = playerObj.transform;
         else
-            Debug.LogError("Player bulunamadı! Player objesine 'Player' tag'i eklenmiş mi?");
-        
-        // Başlangıçta itemları gizle (chest kapalı başlıyor)
-        UpdateItemVisibility();
+            Debug.LogError("Player tag eksik!");
     }
 
     void Update()
     {
-        // Player mesafe kontrolü
         CheckPlayerDistance();
 
         if (isPlayerNear && !uiLocked)
         {
-            if (!isOpen)
-                interactUI.SetActive(true); // Açmak için E'ye bas
+            bool hasEnoughMoney = MoneyManager.Money >= chestPrice;
+
+            if (!isOpen && !notEnoughMoneyUI.activeSelf)
+            {
+                interactUI.SetActive(true);
+            }
             else
-                interactUI.SetActive(false); // Açıkken yazı yok
+            {
+                interactUI.SetActive(false);
+            }
 
             if (Input.GetKeyDown(KeyCode.E))
             {
-                Debug.Log("E tuşu basıldı!");
-                ToggleChest();
+                TryToggleChest();
             }
         }
         else
@@ -62,71 +63,73 @@ public class ChestController : MonoBehaviour
         if (player == null) return;
 
         float distance = Vector3.Distance(transform.position, player.position);
-        
-        if (distance <= interactDistance)
+        isPlayerNear = distance <= interactDistance;
+    }
+
+    void TryToggleChest()
+    {
+        if (isOpen)
         {
-            if (!isPlayerNear)
-                Debug.Log("Player yaklaştı - mesafe: " + distance);
-            isPlayerNear = true;
+            CloseChest();
+            return;
+        }
+
+        bool canOpen = chestPrice <= 0 || MoneyManager.Spend(chestPrice);
+
+        if (canOpen)
+        {
+            OpenChest();
         }
         else
         {
-            if (isPlayerNear)
-                Debug.Log("Player uzaklaştı - mesafe: " + distance);
-            isPlayerNear = false;
+            interactUI.SetActive(false);
+            if (notEnoughMoneyUI != null)
+            {
+                notEnoughMoneyUI.SetActive(true);
+                Invoke(nameof(HideMoneyWarning), moneyWarningDuration);
+            }
         }
     }
 
-    void ToggleChest()
+    void OpenChest()
     {
-        Debug.Log("ToggleChest çağrıldı! Önceki durum: " + isOpen);
-        
-        isOpen = !isOpen;
-        
-        Debug.Log("Yeni durum: " + isOpen);
-        
+        isOpen = true;
+
         if (animator != null)
-        {
-            animator.SetBool("Open", isOpen);
-            Debug.Log("Animator'a Open=" + isOpen + " gönderildi");
-        }
-        else
-        {
-            Debug.LogError("Animator null! Inspector'da Animator atanmış mı?");
-        }
+            animator.SetBool("Open", true);
 
-        // Item görünürlüğünü güncelle
-        UpdateItemVisibility();
-
-        if (!isOpen)
-        {
-            // Sandık kapatıldıktan sonra UI biraz geç gelsin
-            StartCoroutine(ShowUIDelayed());
-        }
+        SpawnRandomItems();
     }
 
-    void UpdateItemVisibility()
+    void CloseChest()
     {
-        // Eğer sandık hiç açılmamışsa
-        if (!hasBeenOpened)
-        {
-            foreach (GameObject item in chestItems)
-            {
-                if (item != null)
-                {
-                    item.SetActive(isOpen);
-                }
-            }
-        
-            // İlk kez açıldıysa işaretle
-            if (isOpen)
-            {
-                hasBeenOpened = true;
-                Debug.Log("Sandık ilk kez açıldı! Artık itemlar hep görünür kalacak.");
-            }
-        }
-        // Sandık daha önce açıldıysa itemlar hep görünür kalır (hiçbir şey yapma)
+        isOpen = false;
+
+        if (animator != null)
+            animator.SetBool("Open", false);
+
+        StartCoroutine(ShowUIDelayed());
     }
+
+    void SpawnRandomItems()
+    {
+        if (itemPool.Length == 0 || itemSpawnPoints.Length == 0)
+        {
+            Debug.LogWarning("Item havuzu ya da spawn noktaları eksik!");
+            return;
+        }
+
+        foreach (Transform spawnPoint in itemSpawnPoints)
+        {
+            int randomIndex = Random.Range(0, itemPool.Length);
+            GameObject itemToSpawn = itemPool[randomIndex];
+
+            // Raycast yok: doğrudan pozisyona instantiate
+            GameObject spawnedItem = Instantiate(itemToSpawn, spawnPoint.position, Quaternion.identity);
+            Debug.Log("Sandıktan çıkan item: " + spawnedItem.name);
+        }
+    }
+
 
     IEnumerator ShowUIDelayed()
     {
@@ -135,7 +138,12 @@ public class ChestController : MonoBehaviour
         uiLocked = false;
     }
 
-    // Debug için görsel gösterim
+    void HideMoneyWarning()
+    {
+        if (notEnoughMoneyUI != null)
+            notEnoughMoneyUI.SetActive(false);
+    }
+
     void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.yellow;

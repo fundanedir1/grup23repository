@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.SceneManagement; 
 
 public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private float hitPoints = 500f;
     private float maxHealth = 500f;
 
-    [SerializeField] private HealthBar healthBar; // HealthBar referansı
+    [SerializeField] private HealthBar healthBar; 
 
     void Start()
     {
@@ -47,6 +48,6 @@ public class PlayerHealth : MonoBehaviour
 
     private void Die()
     {
-        // Ölüm animasyonu, sahne değişimi vb.
+        SceneManager.LoadScene("GameOverScene");
     }
 }
