@@ -42,7 +42,7 @@ public class TutorialManager : MonoBehaviour
         closeButton.onClick.AddListener(CloseTutorial);
     }
 
-    void OpenTutorial()
+    public void OpenTutorial()
     {
         Debug.Log("Tutorial başlatılıyor...");
         currentPage = 0;
@@ -50,7 +50,7 @@ public class TutorialManager : MonoBehaviour
         PlayerPrefs.SetInt(TutorialSeenBeforeKey, 1);
     }
 
-    void NextPage()
+    public void NextPage()
     {
         Debug.Log($"NextPage çağrıldı. Şu anki sayfa: {currentPage}");
 
@@ -68,7 +68,7 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
-    void PreviousPage()
+    public void PreviousPage()
     {
         Debug.Log($"PreviousPage çağrıldı. Şu anki sayfa: {currentPage}");
 
@@ -85,7 +85,7 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
-    void CloseTutorial()
+    public void CloseTutorial()
     {
         Debug.Log("Tutorial kapatılıyor.");
         foreach (GameObject page in pages)
