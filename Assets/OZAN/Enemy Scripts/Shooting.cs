@@ -5,6 +5,14 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+
+    public static Shooting Instance { get; private set; }
+
+     private void Awake() => Instance = this;
+
+
+    
+
     [SerializeField] Camera FPSCamera;
     [SerializeField] float range = 100f;
     [SerializeField] float damageAmount = 45f;
@@ -25,6 +33,12 @@ public class Shooting : MonoBehaviour
     {
         ShootingEffect();
         Raycasting();
+    }
+    public void SetShootEnabled(bool state)
+    {
+        enabled = state;                 
+        if (!state && shoot && shoot.isPlaying)
+            shoot.Stop();                 
     }
 
     private void Raycasting()

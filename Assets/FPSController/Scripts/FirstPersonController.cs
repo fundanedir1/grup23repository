@@ -6,6 +6,7 @@ namespace EasyPeasyFirstPersonController
 
     public partial class FirstPersonController : MonoBehaviour
     {
+        public static FirstPersonController Instance { get; private set; }
         [Range(0, 100)] public float mouseSensitivity = 25f;
         [Range(0f, 200f)] private float snappiness = 100f;
         [Range(0f, 20f)] public float walkSpeed = 10f;
@@ -67,10 +68,18 @@ namespace EasyPeasyFirstPersonController
         private float currentTiltAngle;
         private float tiltVelocity;
 
+        
+
+
+
         public float CurrentCameraHeight => isCrouching || isSliding ? crouchCameraHeight : originalCameraParentHeight;
 
         private void Awake()
         {
+
+            Instance = this;                                                 // ← EKLE
+            characterController = GetComponent<CharacterController>();
+
             characterController = GetComponent<CharacterController>();
             cam = playerCamera.GetComponent<Camera>();
             originalHeight = characterController.height;
