@@ -4,14 +4,14 @@ using System.Collections;
 public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private float hitPoints = 100f;
-    [SerializeField] private Animator animator;         // Animator bağlantısı
-    [SerializeField] private float deathAnimDuration = 1.4f; // Ölüm animasyonu süresi (saniye cinsinden)
+    [SerializeField] private Animator animator;
+    [SerializeField] private float deathAnimDuration = 1.4f;
 
     private bool isDead = false;
 
     public void GetDamage(float damage)
     {
-        if (isDead) return; // Zombi zaten öldüyse tekrar hasar alma
+        if (isDead) return;
 
         hitPoints -= damage;
 
@@ -21,21 +21,34 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
+    public bool IsDead() // AI tarafından kontrol edilsin diye public getter
+    {
+        return isDead;
+    }
+
     private void Die()
     {
         isDead = true;
 
         if (animator != null)
-        {
-            animator.SetTrigger("die"); // Animator'daki "die" trigger'ını çalıştır
-        }
+            animator.SetTrigger("die");
+
+        // Collider'ları kapat
+        Collider[] colliders = GetComponents<Collider>();
+        foreach (var col in colliders)
+            col.enabled = false;
+
+        // NavMeshAgent'ı kapat
+        var navAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        if (navAgent != null)
+            navAgent.enabled = false;
 
         StartCoroutine(DeathDelay());
     }
 
     private IEnumerator DeathDelay()
     {
-        yield return new WaitForSeconds(deathAnimDuration); // Animasyon bitene kadar bekle
+        yield return new WaitForSeconds(deathAnimDuration);
         Destroy(gameObject);
     }
 }
