@@ -3,21 +3,52 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    
-    public Slider slider;
-    public Gradient gradient;
-    public Image fill;
+    [SerializeField] private Slider healthSlider;
+    [SerializeField] private Text healthText; 
 
-    public void SetMaxHealth(int health)
+    private void Start()
     {
-        slider.maxValue = health;
-        slider.value = health;
-        fill.color = gradient.Evaluate(1f);
-    }
-    public void SetHealth(int health)
-    { 
-        slider.value = health;
-        fill.color = gradient.Evaluate(slider.normalizedValue);
+        if (healthSlider == null)
+        {
+            healthSlider = GetComponent<Slider>();
+        }
 
+        if (healthSlider == null)
+        {
+            Debug.LogError("❌ HealthBar: Slider component bulunamadı!");
+        }
+    }
+
+    public void SetMaxHealth(int maxHealth)
+    {
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = maxHealth;
+            Debug.Log($"✅ Max Health set to: {maxHealth}");
+        }
+
+        if (healthText != null)
+        {
+            healthText.text = $"{maxHealth}/{maxHealth}";
+        }
+    }
+
+    public void SetHealth(int health)
+    {
+        if (healthSlider != null)
+        {
+            healthSlider.value = health;
+            Debug.Log($"🔄 Health UI updated to: {health}");
+        }
+        else
+        {
+            Debug.LogError("❌ HealthSlider null! SetHealth çalışmadı.");
+        }
+
+        if (healthText != null)
+        {
+            healthText.text = $"{health}/{(int)healthSlider.maxValue}";
+        }
     }
 }
