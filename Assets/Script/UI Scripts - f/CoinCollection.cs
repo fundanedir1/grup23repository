@@ -1,28 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
+using TMPro;
 
 public class CoinCollection : MonoBehaviour
 {
-
-    private int Coin = 0;
     public TextMeshProUGUI coinText;
 
-    public PlayerAudioManager audioManager;
-
-
-    private void OnTriggerEnter(Collider other)
+    private void OnEnable()
     {
-        if(other.transform.tag == "Coin")
-        {
-            Coin++;
-            coinText.text = Coin.ToString();
-            Debug.Log("Coins: " + Coin);
-            if (audioManager != null)
-                audioManager.OnCoinCollected();
-            Destroy(other.gameObject);
-        }   
+        MoneyManager.OnMoneyChanged += UpdateCoinDisplay;
+        UpdateCoinDisplay(MoneyManager.Money);
+    }
 
-    }  
+    private void OnDisable()
+    {
+        MoneyManager.OnMoneyChanged -= UpdateCoinDisplay;
+    }
+
+    private void UpdateCoinDisplay(int currentMoney)
+    {
+        coinText.text = currentMoney.ToString();
+    }
 }

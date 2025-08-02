@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Coin
   - ChestItems
+  - Ground
   layers:
   - Default
   - TransparentFX

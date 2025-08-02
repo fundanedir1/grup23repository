@@ -12,9 +12,13 @@ public class FlyingEnemyAi : MonoBehaviour
 
     [Header("Death Fall Settings")]
     [SerializeField] private float fallSpeed = 10f;
+    [SerializeField] private LayerMask groundLayerMask = -1; 
 
     float targetDistance = Mathf.Infinity;
     bool isProvoked = false;
+    bool isDead = false;
+    bool hasHitGround = false;
+    
     Animator animator;
     Rigidbody rb;
     EnemyHealth enemyHealth;
@@ -25,7 +29,6 @@ public class FlyingEnemyAi : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         enemyHealth = GetComponent<EnemyHealth>();
         
-        // Başlangıçta Rigidbody'yi kinematic yap (fizik simülasyonu olmasın)
         if (rb != null)
         {
             rb.isKinematic = true;
@@ -34,10 +37,19 @@ public class FlyingEnemyAi : MonoBehaviour
 
     void Update()
     {
-        // EnemyHealth scriptinden ölüm durumunu kontrol et
-        if (enemyHealth != null && enemyHealth.IsDead())
+        if (enemyHealth != null && enemyHealth.IsDead() && !isDead)
         {
-            HandleDeathFall();
+            isDead = true;
+            StartDeathFall();
+            return;
+        }
+        
+        if (isDead)
+        {
+            if (!hasHitGround)
+            {
+                ManualGroundCheck();
+            }
             return;
         }
 
@@ -86,21 +98,17 @@ public class FlyingEnemyAi : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         Vector3 nextPosition = transform.position + direction * flySpeed * Time.deltaTime;
         
-        // Engel kontrolü
         RaycastHit hit;
         if (Physics.Raycast(transform.position, direction, out hit, flySpeed * Time.deltaTime + 0.5f))
         {
-            // Engel var, yukarıdan aş
             Vector3 avoidDirection = Vector3.up;
             transform.position = Vector3.MoveTowards(transform.position, transform.position + avoidDirection, flySpeed * Time.deltaTime);
         }
         else
         {
-            // Engel yok, normal hareket
             transform.position = Vector3.MoveTowards(transform.position, target.position, flySpeed * Time.deltaTime);
         }
         
-        // Hedefe doğru bak
         if (direction != Vector3.zero)
         {
             transform.LookAt(target);
@@ -116,62 +124,137 @@ public class FlyingEnemyAi : MonoBehaviour
         Debug.Log(name + " has stopped chasing " + target.name);
     }
 
-    // Ölüm durumunda yere düşme işlemi
-    private void HandleDeathFall()
+
+    private void StartDeathFall()
     {
-        // İlk kez ölüm durumu tespit edildiğinde
-        if (rb != null && rb.isKinematic)
+
+        isProvoked = false;
+        
+        if (animator != null)
         {
-            // Rigidbody'yi aktive et (fizik simülasyonu başlasın)
+            animator.SetBool("attack", false);
+            animator.SetBool("idle", false);
+        }
+        
+        if (rb != null)
+        {
             rb.isKinematic = false;
             rb.useGravity = true;
             
-            // AI davranışlarını durdur
-            isProvoked = false;
-            
-            Debug.Log(name + " has died and is falling!");
+            Collider col = GetComponent<Collider>();
+            if (col != null)
+            {
+                col.isTrigger = false;
+            }
         }
-
-        // Eğer Rigidbody yoksa manuel olarak düşür
-        if (rb == null)
+        
+        Debug.Log(name + " has died and is falling!");
+    }
+    
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log($"COLLISION DETECTED: {collision.gameObject.name}, Tag: {collision.gameObject.tag}, Layer: {collision.gameObject.layer}");
+        Debug.Log($"isDead: {isDead}, hasHitGround: {hasHitGround}");
+        
+        if (isDead && !hasHitGround)
         {
-            transform.position += Vector3.down * fallSpeed * Time.deltaTime;
+            Debug.Log("Death collision check passed");
+            
+            hasHitGround = true;
+            HandleGroundHit();
         }
+    }
+    
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log($"TRIGGER DETECTED: {other.gameObject.name}");
+        
+        if (isDead && !hasHitGround)
+        {
+            hasHitGround = true;
+            HandleGroundHit();
+        }
+    }
+    
+    private bool IsInGroundLayer(GameObject obj)
+    {
+        return (groundLayerMask.value & (1 << obj.layer)) > 0;
+    }
+    
+    private void HandleGroundHit()
+    {
+        if (rb != null)
+        {
+            rb.velocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
 
-        // Yere çarptıysa duraksama efekti (opsiyonel)
-        CheckGroundImpact();
+            rb.isKinematic = true;
+            rb.useGravity = false;
+        }
+        
+        Debug.Log(name + " has hit the ground!");
+        
     }
 
-    // Yere çarpma kontrolü
-    private void CheckGroundImpact()
+
+    private void ManualGroundCheck()
     {
         RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.2f))
+        float checkDistance = 0.5f;
+        
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, checkDistance))
         {
-            if (hit.collider.CompareTag("Ground") || hit.collider.name.ToLower().Contains("ground"))
+            Debug.Log($"Manual ground check hit: {hit.collider.name}");
+            hasHitGround = true;
+            
+            transform.position = hit.point + Vector3.up * 0.1f;
+            
+            HandleGroundHit();
+        }
+        else
+        {
+            if (transform.position.y < -10f)
             {
-                // Yere çarptı, hızını azalt
-                if (rb != null && rb.velocity.magnitude > 1f)
-                {
-                    rb.velocity *= 0.3f; // Yavaşlat
-                }
+                Debug.Log("Emergency stop - too low!");
+                hasHitGround = true;
+                HandleGroundHit();
             }
         }
     }
-
-    // Debug için Gizmos
+    
+    private void ManualFall()
+    {
+        if (hasHitGround) return;
+        
+        RaycastHit hit;
+        float rayDistance = fallSpeed * Time.deltaTime + 0.1f;
+        
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, rayDistance, groundLayerMask))
+        {
+            transform.position = hit.point + Vector3.up * 0.1f; 
+            hasHitGround = true;
+            Debug.Log(name + " has hit the ground (manual)!");
+            return;
+        }
+        
+        transform.position += Vector3.down * fallSpeed * Time.deltaTime;
+    }
+    
     void OnDrawGizmosSelected()
     {
-        // Sadece canlıyken gizmos göster
-        if (enemyHealth == null || !enemyHealth.IsDead())
+        if (!isDead)
         {
-            // Takip alanı
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, chasingRadius);
             
-            // Saldırı alanı
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(transform.position, attackDistance);
+        }
+        
+        if (isDead && !hasHitGround)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawRay(transform.position, Vector3.down * (fallSpeed * Time.deltaTime + 0.1f));
         }
     }
 }
