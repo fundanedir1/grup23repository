@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\23grup-bootcamp\\grup23repository\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\coincollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\coincollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\playeraudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\playeraudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\QuitButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\QuitButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\BackToMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\BackToMenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\PlayerHealthfunda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PlayerHealthfunda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\QuitButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\QuitButton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\TutorialManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +46,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerAudio.cs",
+              "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\PlayerAudio.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\PlayerAudio.cs",
+              "ToolTip": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\PlayerAudio.cs",
+              "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\PlayerAudio.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAQwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T09:13:50.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "CoinCollection.cs",
+              "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\CoinCollection.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\CoinCollection.cs",
+              "ToolTip": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\CoinCollection.cs",
+              "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\CoinCollection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T09:12:18.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "BackToMenu.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\BackToMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BackToMenu.cs",
@@ -59,13 +93,12 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\QuitButton.cs",
               "ToolTip": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\QuitButton.cs",
               "RelativeToolTip": "Assets\\Scripts\\QuitButton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-01T21:45:42.388Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PlayerHealthfunda.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\PlayerHealthfunda.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealthfunda.cs",
@@ -76,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "TutorialManager.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\TutorialManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TutorialManager.cs",
@@ -88,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "SettingsManager.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\SettingsManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SettingsManager.cs",
@@ -100,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PauseGame.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\PauseGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PauseGame.cs",
@@ -112,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "MenuController.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\MenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuController.cs",
