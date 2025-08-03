@@ -112,7 +112,7 @@ public class EnemyAI : MonoBehaviour
         Debug.DrawLine(transform.position, player.position, Color.red);
         
         // 20 metre içindeyse takip et
-        if (distance < 10000f)
+        if (distance < 1000f)
         {
             if (distance > agent.stoppingDistance)
             {
