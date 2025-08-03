@@ -7,9 +7,9 @@
 
 | İsim | LinkedIn | Görev |
 |------|----------|-------|
-| Funda Ayas | [LinkedIn](https://www.linkedin.com/in/fundaayas/) | Scrum Master |
-| Ozan Yücel | [LinkedIn](https://www.linkedin.com/in/ozany%C3%BCcel/) | Project Manager |
-| Dilara Tatlıdede | [LinkedIn](https://www.linkedin.com/in/dilara-tatl%C4%B1dede-9197b4333/) | Developer |
+| Funda Ayas | [LinkedIn](https://www.linkedin.com/in/fundaayas/) | Scrum Master | funda.ayas2@gmail.com |
+| Ozan Yücel | [LinkedIn](https://www.linkedin.com/in/ozany%C3%BCcel/) | Project Manager | ozanyucel22@gmail.com |
+| Dilara Tatlıdede | [LinkedIn](https://www.linkedin.com/in/dilara-tatl%C4%B1dede-9197b4333/) | Developer | Di_lara.20@hotmail.com |
 | Zehra Timurağaoğlu | [LinkedIn](https://www.linkedin.com/in/zehra-timura%C4%9Fao%C4%9Flu-9b89222a6/) | Developer |
 | Arda Bağ | [LinkedIn](https://www.linkedin.com/in/arda-ba%C4%9F-098530196/) | Developer |
 
