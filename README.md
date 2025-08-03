@@ -441,6 +441,11 @@ Trello Board Görüntüsü:
 
 ![Görsel 9](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-29%20at%2023.35.59.jpeg?raw=true)
 
+![a.png](https://github.com/fundanedir1/grup23repository/blob/673bd204e94d6e27f366dee6083b86b1c83d7648/oyun_ici_gorseller/a.png?raw=true)
+
+![b.png](https://github.com/fundanedir1/grup23repository/blob/673bd204e94d6e27f366dee6083b86b1c83d7648/oyun_ici_gorseller/b.png?raw=true)
+
+![c.png](https://github.com/fundanedir1/grup23repository/blob/673bd204e94d6e27f366dee6083b86b1c83d7648/oyun_ici_gorseller/c.png?raw=true)
 
 
 
