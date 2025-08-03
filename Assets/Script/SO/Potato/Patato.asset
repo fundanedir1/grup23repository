@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720aa6dfd5808a6499903a1d78acfdf3, type: 3}
+  m_Name: Patato
+  m_EditorClassIdentifier: 
+  cropName: Pumpkin
+  seedPrefab: {fileID: 2225936616828265834, guid: caf86e98dc2b3664c8a64727148a0daa, type: 3}
+  plantingSeconds: 2
+  growthPrefabs:
+  - {fileID: 581813921513466333, guid: a9632863e7d7b1744b6a9306da45e732, type: 3}
+  - {fileID: 3256921337644179857, guid: 3b8474fdbce8e9c48b89583ce0deff84, type: 3}
+  - {fileID: 2373232228857592989, guid: bd0dc1cb48160544b9e2920ef9574503, type: 3}
+  daysToRipe: 3
+  harvestSeconds: 1
+  harvestAmount: 15
+  harvestItem: {fileID: 11400000, guid: 46dfb5a36e12d344e95243731b2fc611, type: 2}
+  sellPrice: 0
+  craftOutput: {fileID: 0}
+  spoilAfterDays: 1
+  zombieDamageDuration: 10

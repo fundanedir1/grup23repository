@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720aa6dfd5808a6499903a1d78acfdf3, type: 3}
+  m_Name: Carrot
+  m_EditorClassIdentifier: 
+  cropName: Carrot
+  seedPrefab: {fileID: 4926595974982170965, guid: c82abdc1786a183409a122bfa05b0c8d, type: 3}
+  plantingSeconds: 2
+  growthPrefabs:
+  - {fileID: 2760851523881283213, guid: 34d3a559c81f82f419dfe28f75353c16, type: 3}
+  - {fileID: 2906172467108984336, guid: 5a83886aa52c0fd41a0bd915838cc552, type: 3}
+  daysToRipe: 2
+  harvestSeconds: 1.5
+  harvestAmount: 8
+  harvestItem: {fileID: 11400000, guid: a7bd10b0f639e12429fe9aef91d5cf0a, type: 2}
+  sellPrice: 0
+  craftOutput: {fileID: 0}
+  spoilAfterDays: 1
+  zombieDamageDuration: 10

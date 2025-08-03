@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coin
+  - ChestItems
+  - Ground
+  - Enemy
+  - TrapSpawn
   layers:
   - Default
   - TransparentFX

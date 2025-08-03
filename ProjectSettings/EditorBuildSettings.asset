@@ -6,18 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SplashScene.unity
+    path: Assets/Dilara_Folder/Scenes/SplashScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/MainMenuScene.unity
+    path: Assets/Dilara_Folder/Scenes/MainMenuScene.unity
     guid: 5a0748118dd9d714d83236eb8df6ae95
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
-    guid: 894dc06ef56c1444ba6d8c1d4185bb34
+    path: Assets/Dilara_Folder/Scenes/Map_Funda.unity
+    guid: 91a74f040b9a5fc44bba2a0d994a0fda
   - enabled: 1
-    path: Assets/Scenes/SettingsScene.unity
+    path: Assets/Dilara_Folder/Scenes/SettingsScene.unity
     guid: 5afdda92f622db24190b93544e6b11e5
   - enabled: 1
-    path: Assets/Scenes/CreditsScene.unity
+    path: Assets/Dilara_Folder/Scenes/CreditsScene.unity
     guid: fa04a3490e39b614287d4a578c5bf991
+  - enabled: 1
+    path: Assets/Dilara_Folder/Scenes/Map.unity
+    guid: 419e61fdd3e000845aa33df62deabf89
+  - enabled: 1
+    path: Assets/Dilara_Folder/Scenes/GameOverScene.unity
+    guid: b6801dcb311456748a9dd81d3a15e9b3
   m_configObjects: {}

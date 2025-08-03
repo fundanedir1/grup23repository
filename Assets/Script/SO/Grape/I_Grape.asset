@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca3c277d851db94ea45d2e61d6035fd, type: 3}
+  m_Name: I_Grape
+  m_EditorClassIdentifier: 
+  itemName: Grape
+  icon: {fileID: 21300000, guid: e07ebfa82e9a1584fa52cdfb973a8d4f, type: 3}
+  worldPrefab: {fileID: 496426424750123442, guid: 9059740cdda241d40aecdf4794210d8e, type: 3}
+  stackMax: 24
+  isSeed: 0
+  cropRef: {fileID: 11400000, guid: 739ed3257a8e01c4cadd2629a2c66662, type: 2}
+  sellPrice: 3
+  cropToPlant: {fileID: 0}

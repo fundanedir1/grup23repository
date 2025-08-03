@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca3c277d851db94ea45d2e61d6035fd, type: 3}
+  m_Name: I_TomatoSeed
+  m_EditorClassIdentifier: 
+  itemName: TomatoSeed
+  icon: {fileID: 21300000, guid: bb7faf4c850ef48cdb33c2bd17737619, type: 3}
+  worldPrefab: {fileID: 2225936616828265834, guid: 6114be79db9392b44bf65670a9b8f757, type: 3}
+  stackMax: 5
+  isSeed: 1
+  cropRef: {fileID: 11400000, guid: 08a3d1c68192d4e43951d090a0ccdb3b, type: 2}
+  sellPrice: 0
+  cropToPlant: {fileID: 11400000, guid: 08a3d1c68192d4e43951d090a0ccdb3b, type: 2}
