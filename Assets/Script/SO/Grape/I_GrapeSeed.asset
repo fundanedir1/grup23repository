@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: I_GrapeSeed
   m_EditorClassIdentifier: 
   itemName: Grape
-  icon: {fileID: 1424895709, guid: 347d349f97f2a4499ada5fe3efcc9713, type: 3}
+  icon: {fileID: 21300000, guid: e07ebfa82e9a1584fa52cdfb973a8d4f, type: 3}
   worldPrefab: {fileID: 2225936616828265834, guid: d7c4cdaa2d8f7f645a03a03d68a16c65, type: 3}
   stackMax: 5
   isSeed: 1

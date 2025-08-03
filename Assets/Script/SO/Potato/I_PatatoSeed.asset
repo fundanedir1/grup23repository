@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: I_PatatoSeed
   m_EditorClassIdentifier: 
   itemName: PatatoSeed
-  icon: {fileID: -347135743, guid: 347d349f97f2a4499ada5fe3efcc9713, type: 3}
+  icon: {fileID: 21300000, guid: 3ccf9c0c8e924e344951cd6f9da6d29f, type: 3}
   worldPrefab: {fileID: 5850635607746148329, guid: bb707755b85cddb45b732d68a7ae8c66, type: 3}
   stackMax: 5
   isSeed: 1

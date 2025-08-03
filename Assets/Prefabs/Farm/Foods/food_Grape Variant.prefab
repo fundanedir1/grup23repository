@@ -132,6 +132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5282e497a7c5810458eaaa50554e893d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemData: {fileID: 0}
+  itemData: {fileID: 11400000, guid: 9c0f70036ab140f40821d8b64eecb172, type: 2}
   amount: 1
   selfDestroySeconds: 120
