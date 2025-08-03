@@ -432,6 +432,9 @@ Trello Board Görüntüsü:
 
 ## Oyun içi görseller:
 
+video: https://drive.google.com/file/d/1-tu5x6sjVbBjIANvkppbU1ids2VjEgH6/view?usp=drive_link
+
+
 
 ![Görsel 1](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-17%20at%2016.56.13.jpeg?raw=true)
 
