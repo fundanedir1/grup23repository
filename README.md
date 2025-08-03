@@ -450,6 +450,8 @@ Trello Board Görüntüsü:
 
 #Oyun ekonomisi için inceleyebilirsiniz:
 
+[Oyun Ekonomisi Excel Dosyası](https://github.com/fundanedir1/grup23repository/blob/698df58742e427d1c8b38b5efb2d4a04d4296f91/game_economy.xlsx)
+
 
 
 
