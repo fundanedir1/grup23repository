@@ -15,7 +15,7 @@ MonoBehaviour:
   displayName: Tarp
   icon: {fileID: 21300000, guid: 28d2c2677149d45e290e8fa042b1b80f, type: 3}
   category: 2
-  price: 5
+  price: 9999
   giveItem: {fileID: 0}
   giveAmount: 1
   upgradeKey: Tarp
