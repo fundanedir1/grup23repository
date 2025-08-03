@@ -1,93 +1,74 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-/// <summary>
-/// Simple ground‑zombie AI:
-/// • Prioritises targets in this order
-///   1. Player if inside <senseRadius>
-///   2. Nearest TilePlot that currently has a crop
-///   3. Player (fallback)
-/// • Uses NavMeshAgent for path‑finding.
-/// </summary>
-[RequireComponent(typeof(NavMeshAgent))]
-[RequireComponent(typeof(EnemyHealth))]
-[AddComponentMenu("Game/Enemy/Enemy AI")]
 public class EnemyAi : MonoBehaviour
 {
-    [Header("Sensing")]
-    [Tooltip("Radius in which the player will always be prioritised")]
-    [SerializeField] private float senseRadius = 12f;
+    [SerializeField] private Transform target;
+    [SerializeField] private float chasingRadious = 6f;
 
-    [Header("Attack")]
-    [Tooltip("How close before triggering attack anim (agent.stoppingDistance is used for actual nav)")]
-    [SerializeField] private float attackTriggerDistance = 1.8f;
+    private NavMeshAgent navMeshAgent;
+    private Animator animator;
+    private EnemyHealth enemyHealth;
 
-    private NavMeshAgent agent;
-    private Transform    player;
-    private TilePlot      targetPlot;
-    private Animator     anim;
+    private float targetDistance = Mathf.Infinity;
+    private bool isProved = false;
 
-    // Cached sqr radius for cheap distance check
-    private float senseRadiusSqr;
-
-    private static readonly int AnimMove = Animator.StringToHash("MoveSpeed");
-    private static readonly int AnimHit  = Animator.StringToHash("Hit");
-
-    private void Awake()
+    void Start()
     {
-        agent           = GetComponent<NavMeshAgent>();
-        anim            = GetComponentInChildren<Animator>();
-        player          = GameObject.FindGameObjectWithTag("Player")?.transform;
-        senseRadiusSqr  = senseRadius * senseRadius;
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        enemyHealth = GetComponent<EnemyHealth>();
     }
 
-    private void Update()
+    void Update()
     {
-        if (!player) return;      // safety
+        if (enemyHealth != null && enemyHealth.IsDead()) return; // Ölü düşman hiçbir şey yapmasın
 
-        // 1) Player inside sense radius?  -> Player target wins
-        if ((player.position - transform.position).sqrMagnitude <= senseRadiusSqr)
+        targetDistance = Vector3.Distance(transform.position, target.position);
+
+        if (isProved)
         {
-            targetPlot = null;
-            SetDestination(player.position);
+            if (targetDistance > chasingRadious)
+                StopChasing();
+            else
+                DelayWithTarget();
         }
-        else // 2) Try nearest growing/ripe plot
+        else if (targetDistance <= chasingRadious)
         {
-            if (targetPlot == null || !targetPlot.HasCrop)
-                targetPlot = CropRegistry.GetNearestOccupied(transform.position);
-
-            if (targetPlot)
-                SetDestination(targetPlot.transform.position);
-            else // 3) fallback to player
-                SetDestination(player.position);
+            isProved = true;
         }
-
-        UpdateAnimation();
     }
 
-    private void SetDestination(Vector3 worldPos)
+    private void DelayWithTarget()
     {
-        if (!agent.isOnNavMesh) return; // Could log nav error
-        agent.SetDestination(worldPos);
+        if (targetDistance >= navMeshAgent.stoppingDistance)
+            ChaseTarget();
+
+        if (targetDistance <= navMeshAgent.stoppingDistance)
+            AttackTarget();
     }
 
-    // ─────────────────── Animation / Attack ───────────────────
-    private void UpdateAnimation()
+    private void AttackTarget()
     {
-        if (!anim) return;
-        float speed = agent.velocity.magnitude / agent.speed; // normalised 0‑1
-        anim.SetFloat(AnimMove, speed);
-
-        // Attack trigger (simple): if close enough & agent cannot move further
-        if (agent.remainingDistance <= attackTriggerDistance && agent.pathPending == false)
-            anim.SetTrigger(AnimHit);
+        animator.SetBool("attack", true);
+        Debug.Log(name + " is attacking " + target.name);
     }
 
-#if UNITY_EDITOR
-    private void OnDrawGizmosSelected()
+    private void ChaseTarget()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, senseRadius);
+        animator.SetBool("attack", false);
+        animator.SetBool("idle", false);
+        navMeshAgent.SetDestination(target.position);
     }
-#endif
+
+    private void StopChasing()
+    {
+        isProved = false;
+        navMeshAgent.ResetPath();
+        animator.SetBool("attack", false);
+        animator.SetBool("idle", true);
+        Debug.Log(name + " has stopped chasing " + target.name);
+    }
 }
