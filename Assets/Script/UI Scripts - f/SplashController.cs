@@ -6,16 +6,16 @@ using UnityEngine.UIElements;
 
 public class SplashController : MonoBehaviour
 {
-    public UnityEngine.UI.Image teamLogo;
-    public UnityEngine.UI.Image gameLogo;
+    //public UnityEngine.UI.Image teamLogo;
+    //public UnityEngine.UI.Image gameLogo;
     public float fadeDuration = 1f;
     public float displayDuration = 1f;
     public float maxScale = 1.2f; // etkili zoom icin
     public string nextSceneName = "MainMenuScene";
 
     public AudioSource audioSource;
-    public AudioClip teamLogoSound;
-    public AudioClip gameLogoSound;
+    //public AudioClip teamLogoSound;
+    //public AudioClip gameLogoSound;
 
     private bool canProceed = false;
     public GameObject menuButton;
@@ -25,7 +25,7 @@ public class SplashController : MonoBehaviour
     {
         menuButton.SetActive(false); // menu basta gorunmesin
         StartCoroutine(PlaySplashSequence());
-        Debug.Log("Ekip logosu gosteriliyor...");
+        //Debug.Log("Ekip logosu gosteriliyor...");
 
     }
 
@@ -39,14 +39,15 @@ public class SplashController : MonoBehaviour
 
     IEnumerator PlaySplashSequence()
     {
-        yield return StartCoroutine(ShowLogo(teamLogo, teamLogoSound));
-        yield return StartCoroutine(ShowLogo(gameLogo, gameLogoSound));
+        //yield return StartCoroutine(ShowLogo(teamLogo, teamLogoSound));
+        //yield return StartCoroutine(ShowLogo(gameLogo, gameLogoSound));
 
         canProceed = true;
         Debug.Log("Tiklayinca devam edecek...");
 
         // Menu butonunu goster
         menuButton.SetActive(true);
+        yield break; // Coroutine burada sonlanir
     }
 
     IEnumerator ShowLogo(UnityEngine.UI.Image logo, AudioClip sound)
