@@ -8,7 +8,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider))]
 public class TilePlot : MonoBehaviour
 {
-    private enum PlotState { Empty, Planting, Growing, Ripe, Harvesting }
+    private enum PlotState { Empty, Planting, Growing, Ripe, Harvesting } // unchanged
 
     [Header("Prefab Placement")]
     [Tooltip("Prefab sahnelenirken eklenecek local offset")]
@@ -22,17 +22,24 @@ public class TilePlot : MonoBehaviour
     private int currentStage;
     private int daysPerStage;
     private Coroutine routine;
+
+    // ——— Public helpers for other systems (EnemyAI) ———
+    public bool HasCrop => state is PlotState.Growing or PlotState.Ripe;
+    public CropData CurrentCropData => crop;
+    public void KillCrop() => ResetPlot();
     private Collider player;
 
     private void OnEnable()
     {
         if (GameManager.Instance != null)
             GameManager.Instance.OnStateChanged += OnStateChanged;
+        CropRegistry.Register(this); // register for zombie AI
     }
     private void OnDisable()
     {
         if (GameManager.Instance != null)
             GameManager.Instance.OnStateChanged -= OnStateChanged;
+        CropRegistry.Unregister(this);
     }
 
     private void OnStateChanged(GameManager.GameState newState)

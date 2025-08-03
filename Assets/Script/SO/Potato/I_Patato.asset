@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ca3c277d851db94ea45d2e61d6035fd, type: 3}
+  m_Name: I_Patato
+  m_EditorClassIdentifier: 
+  itemName: Patato
+  icon: {fileID: -347135743, guid: 347d349f97f2a4499ada5fe3efcc9713, type: 3}
+  worldPrefab: {fileID: 2749250694269202823, guid: b015a20464e894747b3082d01bca3062, type: 3}
+  stackMax: 30
+  isSeed: 0
+  cropRef: {fileID: 11400000, guid: 27acbc98b63858a488131df19e2792a9, type: 2}
+  sellPrice: 2
+  cropToPlant: {fileID: 0}

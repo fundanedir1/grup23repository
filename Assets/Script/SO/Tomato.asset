@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720aa6dfd5808a6499903a1d78acfdf3, type: 3}
+  m_Name: Tomato
+  m_EditorClassIdentifier: 
+  cropName: Tomato
+  seedPrefab: {fileID: 2225936616828265834, guid: 6114be79db9392b44bf65670a9b8f757, type: 3}
+  plantingSeconds: 2
+  growthPrefabs:
+  - {fileID: 5506508461631189923, guid: 5824273cbe1da1742bf33a503bc81c11, type: 3}
+  - {fileID: 8817262692450952945, guid: b43f18a22ba40fe4b8743b0f716eda7e, type: 3}
+  - {fileID: 1302697630416331983, guid: 6eea102661bd87d4782769c15003e52d, type: 3}
+  - {fileID: 2928401474976714223, guid: 573f2e5aeee790a4c864e611ea1e6635, type: 3}
+  daysToRipe: 4
+  harvestSeconds: 1.5
+  harvestAmount: 15
+  harvestItem: {fileID: 11400000, guid: 68e426d28dbf2ed4e9d209b25b65b2bb, type: 2}
+  sellPrice: 0
+  craftOutput: {fileID: 0}
+  spoilAfterDays: 1
+  zombieDamageDuration: 10

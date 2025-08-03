@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f79e4c742f436104f9b7075907b04aa9, type: 3}
+  m_Name: PotatoSeed
+  m_EditorClassIdentifier: 
+  displayName: Potato Seed
+  icon: {fileID: -347135743, guid: 347d349f97f2a4499ada5fe3efcc9713, type: 3}
+  category: 0
+  price: 8
+  giveItem: {fileID: 11400000, guid: 7452cade196c5b04383bbfa8740366f4, type: 2}
+  giveAmount: 1
+  upgradeKey: 
+  unlockPrefab: {fileID: 0}

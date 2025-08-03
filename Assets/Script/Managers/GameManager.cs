@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.Night:
                 // Gece başladı – düşman dalgası tetikle
-                FindObjectOfType<ZombieSpawner>()?.StartNightWave();
+                //FindObjectOfType<ZombieSpawner>()?.StartNightWave();
                 break;
             case GameState.GameOver:
                 // Oyun bitti ekranı vs.
