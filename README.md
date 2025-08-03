@@ -406,6 +406,9 @@ Trello Board Görüntüsü:
 
 ![Trello Görseli 1](https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/trello%20ssleri/f1.png?raw=true)
 
+![Oyun içi görsel](https://github.com/fundanedir1/grup23repository/blob/caa6f84ee10ac846da52617727e694b19c9c7f0a/oyun_ici_gorseller/ggg.png)
+
+
 <p align="center">
   <img src="https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/trello%20ssleri/f2.png?raw=true" width="45%" />
   <img src="https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/trello%20ssleri/f3.png?raw=true" width="45%" />
@@ -431,6 +434,9 @@ Trello Board Görüntüsü:
 
 
 ## Oyun içi görseller:
+
+video: https://drive.google.com/file/d/1-tu5x6sjVbBjIANvkppbU1ids2VjEgH6/view?usp=drive_link
+
 
 
 ![Görsel 1](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-17%20at%2016.56.13.jpeg?raw=true)
