@@ -7,11 +7,11 @@
       "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|D:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\splashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|D:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\splashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\splashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -80,7 +80,7 @@
               "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\TutorialManager.cs",
               "ToolTip": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\TutorialManager.cs",
               "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\TutorialManager.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAswHwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-03T11:20:17.345Z",
               "EditorCaption": ""
@@ -95,8 +95,7 @@
               "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\HealthBar.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAkwHQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T10:56:41.41Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T10:56:41.41Z"
             },
             {
               "$type": "Document",
@@ -108,8 +107,7 @@
               "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\SplashController.cs",
               "ViewState": "AgIAAEkAAAAAAAAAAAAowGwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T10:33:13.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T10:33:13.694Z"
             },
             {
               "$type": "Document",

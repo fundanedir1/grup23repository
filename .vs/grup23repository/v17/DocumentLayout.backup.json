@@ -3,23 +3,31 @@
   "WorkspaceRootPath": "D:\\23grup-bootcamp\\grup23repository\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\tutorialmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\splashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\splashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|D:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\quitbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|D:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\quitbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\quitbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\backtomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|D:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\backtomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\backtomenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|d:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\coincollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|D:\\23grup-bootcamp\\grup23repository\\assets\\script\\ui scripts - f\\coincollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D5209C7-5B81-826D-CED2-128FB3FC5912}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\ui scripts - f\\coincollection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,6 +75,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "TutorialManager.cs",
+              "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\TutorialManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\TutorialManager.cs",
+              "ToolTip": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\TutorialManager.cs",
+              "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\TutorialManager.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAswHwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T11:20:17.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HealthBar.cs",
+              "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\HealthBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\HealthBar.cs",
+              "ToolTip": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\HealthBar.cs",
+              "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\HealthBar.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwHQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-03T10:56:41.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SplashController.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\SplashController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\SplashController.cs",
@@ -79,7 +113,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "QuitButton.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\QuitButton.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\QuitButton.cs",
@@ -87,12 +121,11 @@
               "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\QuitButton.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T10:17:39.087Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T10:17:39.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MenuController.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\MenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\MenuController.cs",
@@ -100,12 +133,11 @@
               "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\MenuController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T10:10:11.497Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T10:10:11.497Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "BackToMenu.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\BackToMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\BackToMenu.cs",
@@ -113,12 +145,11 @@
               "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\BackToMenu.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T10:01:35.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T10:01:35.473Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PlayerAudio.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\PlayerAudio.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\PlayerAudio.cs",
@@ -130,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CoinCollection.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Script\\UI Scripts - f\\CoinCollection.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\UI Scripts - f\\CoinCollection.cs",
@@ -138,12 +169,11 @@
               "RelativeToolTip": "Assets\\Script\\UI Scripts - f\\CoinCollection.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwCYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T09:12:18.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T09:12:18.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "BackToMenu.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\BackToMenu.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BackToMenu.cs",
@@ -154,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "QuitButton.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\QuitButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\QuitButton.cs",
@@ -165,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "PlayerHealthfunda.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\PlayerHealthfunda.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PlayerHealthfunda.cs",
@@ -176,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "TutorialManager.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\TutorialManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TutorialManager.cs",
@@ -188,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "SettingsManager.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\SettingsManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\SettingsManager.cs",
@@ -200,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "PauseGame.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\PauseGame.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PauseGame.cs",
@@ -212,7 +242,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "MenuController.cs",
               "DocumentMoniker": "D:\\23grup-bootcamp\\grup23repository\\Assets\\Scripts\\MenuController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MenuController.cs",
