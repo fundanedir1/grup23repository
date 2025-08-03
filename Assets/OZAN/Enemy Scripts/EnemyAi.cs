@@ -1,74 +1,186 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using System.Collections;
 
-public class EnemyAi : MonoBehaviour
+public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] private Transform target;
-    [SerializeField] private float chasingRadious = 6f;
-
-    private NavMeshAgent navMeshAgent;
+    private NavMeshAgent agent;
+    private Transform player;
     private Animator animator;
-    private EnemyHealth enemyHealth;
-
-    private float targetDistance = Mathf.Infinity;
-    private bool isProved = false;
-
+    private bool foundPlayer = false;
+    
     void Start()
     {
-        navMeshAgent = GetComponent<NavMeshAgent>();
+        agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
-        enemyHealth = GetComponent<EnemyHealth>();
+        
+        // Animator kontrolü
+        if (animator == null)
+        {
+            Debug.LogError(name + " Animator component bulunamadı!");
+        }
+        else
+        {
+            Debug.Log(name + " Animator bulundu. Controller: " + (animator.runtimeAnimatorController ? animator.runtimeAnimatorController.name : "NULL"));
+        }
+        
+        // Başlangıçta agent'ı durdur
+        if (agent != null)
+        {
+            agent.enabled = false;
+        }
+        
+        // Coroutine ile başlat
+        StartCoroutine(InitializeAI());
     }
-
+    
+    IEnumerator InitializeAI()
+    {
+        // Biraz bekle
+        yield return new WaitForSeconds(0.1f);
+        
+        // Player'ı bul
+        FindPlayer();
+        
+        // NavMesh pozisyonunu düzelt
+        FixNavMeshPosition();
+        
+        // Agent'ı aktifleştir
+        if (agent != null)
+        {
+            agent.enabled = true;
+            agent.speed = 2f;
+            agent.stoppingDistance = 2f;
+            agent.autoBraking = true;
+        }
+        
+        // Başlangıç animasyonu
+        SetAnimation("idle", true);
+        
+        Debug.Log(name + " AI initialized. Player found: " + foundPlayer);
+    }
+    
+    void FindPlayer()
+    {
+        // Önce tag ile bul
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
+        
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+            foundPlayer = true;
+            Debug.Log(name + " found player by tag: " + player.name);
+            return;
+        }
+        
+        // Tag ile bulamazsa isim ile bul
+        playerObj = GameObject.Find("FirstPersonController");
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+            foundPlayer = true;
+            Debug.Log(name + " found player by name: " + player.name);
+            return;
+        }
+        
+        Debug.LogError(name + " PLAYER BULUNAMADI! FirstPersonController'a Player tag'i ekle!");
+    }
+    
+    void FixNavMeshPosition()
+    {
+        NavMeshHit hit;
+        if (NavMesh.SamplePosition(transform.position, out hit, 10f, NavMesh.AllAreas))
+        {
+            transform.position = hit.position;
+            Debug.Log(name + " NavMesh position fixed: " + hit.position);
+        }
+        else
+        {
+            Debug.LogError(name + " NavMesh'te uygun pozisyon bulunamadı!");
+        }
+    }
+    
     void Update()
     {
-        if (enemyHealth != null && enemyHealth.IsDead()) return; // Ölü düşman hiçbir şey yapmasın
-
-        targetDistance = Vector3.Distance(transform.position, target.position);
-
-        if (isProved)
+        if (!foundPlayer || player == null || agent == null || !agent.enabled)
+            return;
+            
+        // Player mesafesi
+        float distance = Vector3.Distance(transform.position, player.position);
+        
+        // Debug çizgisi
+        Debug.DrawLine(transform.position, player.position, Color.red);
+        
+        // 20 metre içindeyse takip et
+        if (distance < 10000f)
         {
-            if (targetDistance > chasingRadious)
-                StopChasing();
+            if (distance > agent.stoppingDistance)
+            {
+                // Takip et
+                agent.SetDestination(player.position);
+                SetAnimation("idle", false);
+                SetAnimation("attack", false);
+                // Walk animasyonu (varsa)
+                if (HasParameter("walk"))
+                    SetAnimation("walk", true);
+            }
             else
-                DelayWithTarget();
+            {
+                // Saldır
+                agent.ResetPath();
+                SetAnimation("idle", false);
+                SetAnimation("walk", false);
+                SetAnimation("attack", true);
+                Debug.Log(name + " SALDIRIYOR!");
+            }
         }
-        else if (targetDistance <= chasingRadious)
+        else
         {
-            isProved = true;
+            // Uzaksa dur
+            agent.ResetPath();
+            SetAnimation("attack", false);
+            SetAnimation("walk", false);
+            SetAnimation("idle", true);
         }
     }
-
-    private void DelayWithTarget()
+    
+    void SetAnimation(string parameterName, bool value)
     {
-        if (targetDistance >= navMeshAgent.stoppingDistance)
-            ChaseTarget();
-
-        if (targetDistance <= navMeshAgent.stoppingDistance)
-            AttackTarget();
+        if (animator != null && HasParameter(parameterName))
+        {
+            animator.SetBool(parameterName, value);
+            Debug.Log(name + " Animation: " + parameterName + " = " + value);
+        }
     }
-
-    private void AttackTarget()
+    
+    bool HasParameter(string parameterName)
     {
-        animator.SetBool("attack", true);
-        Debug.Log(name + " is attacking " + target.name);
+        if (animator == null) return false;
+        
+        foreach (AnimatorControllerParameter param in animator.parameters)
+        {
+            if (param.name == parameterName)
+                return true;
+        }
+        return false;
     }
-
-    private void ChaseTarget()
+    
+    // Gizmo ile debug
+    void OnDrawGizmos()
     {
-        animator.SetBool("attack", false);
-        animator.SetBool("idle", false);
-        navMeshAgent.SetDestination(target.position);
-    }
-
-    private void StopChasing()
-    {
-        isProved = false;
-        navMeshAgent.ResetPath();
-        animator.SetBool("attack", false);
-        animator.SetBool("idle", true);
-        Debug.Log(name + " has stopped chasing " + target.name);
+        if (player != null)
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawLine(transform.position, player.position);
+            
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(transform.position, 20f);
+        }
+        
+        if (agent != null && agent.hasPath)
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawLine(transform.position, agent.destination);
+        }
     }
 }

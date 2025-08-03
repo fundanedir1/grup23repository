@@ -498,10 +498,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e7ba9751c7842143a27d06fcc4e49ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  chasingRadius: 1
-  flySpeed: 2
+  detectionRange: 111
+  loseTargetRange: 0
   attackDistance: 2
+  flySpeed: 2
+  hoverHeight: 2
+  obstacleAvoidance: 2
   fallSpeed: 1
   groundLayerMask:
     serializedVersion: 2
