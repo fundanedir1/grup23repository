@@ -14,8 +14,18 @@ public class TutorialManager : MonoBehaviour
     private const string TutorialCompletedKey = "TutorialCompleted";
     private const string TutorialSeenBeforeKey = "TutorialSeenBefore";
 
+    public AudioClip buttonClickSound;
+    [SerializeField] private AudioSource audioSource;
+
+
+
     void Start()
     {
+
+        audioSource = GetComponent<AudioSource>();
+
+        Debug.Log("Page count: " + pages.Length);
+
         // FOR TESTING: reset tutorial state on each play
         PlayerPrefs.DeleteKey(TutorialCompletedKey);
         PlayerPrefs.DeleteKey(TutorialSeenBeforeKey);
@@ -69,6 +79,8 @@ public class TutorialManager : MonoBehaviour
 
     private void ShowPage(int index)
     {
+        Debug.Log($"ShowPage called with index: {index}");
+
         // Disable all pages, then enable only the target one
         for (int i = 0; i < pages.Length; i++)
             pages[i].SetActive(i == index);
@@ -76,6 +88,7 @@ public class TutorialManager : MonoBehaviour
 
     public void NextPage()
     {
+        PlayClickSound();
         Debug.Log($"NextPage called. Current page: {currentPage}");
 
         if (currentPage < pages.Length - 1)
@@ -83,16 +96,13 @@ public class TutorialManager : MonoBehaviour
             currentPage++;
             ShowPage(currentPage);
             Debug.Log($"Moved to page: {currentPage}");
-        }
-        else
-        {
-            Debug.Log("Reached last page. Closing tutorial...");
-            CloseTutorial();
+ 
         }
     }
 
     public void PreviousPage()
     {
+        PlayClickSound();
         Debug.Log($"PreviousPage called. Current page: {currentPage}");
 
         if (currentPage > 0)
@@ -109,6 +119,7 @@ public class TutorialManager : MonoBehaviour
 
     public void CloseTutorial()
     {
+        PlayClickSound();
         Debug.Log("Closing tutorial.");
         tutorialContainer.SetActive(false);
         foreach (GameObject page in pages)
@@ -121,4 +132,11 @@ public class TutorialManager : MonoBehaviour
 
         PlayerPrefs.SetInt(TutorialCompletedKey, 1);
     }
+
+    private void PlayClickSound()
+    {
+        if (buttonClickSound != null && audioSource != null)
+            audioSource.PlayOneShot(buttonClickSound);
+    }
+
 }
