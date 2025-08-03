@@ -448,6 +448,9 @@ Trello Board Görüntüsü:
 ![c.png](https://github.com/fundanedir1/grup23repository/blob/673bd204e94d6e27f366dee6083b86b1c83d7648/oyun_ici_gorseller/c.png?raw=true)
 
 
+#Oyun ekonomisi için inceleyebilirsiniz:
+
+
 
 
 
