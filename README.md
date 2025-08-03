@@ -378,16 +378,12 @@ Trello Board Görüntüsü:
 
 
 
-# SPRINT 3 için TASLAK
+# SPRINT 3
 
 ## Sprint içinde tamamlanması tahmin edilen puan: 100 Puan
-2. Sprint sonunda tamamlanan puan:
+3. Sprint sonunda tamamlanan puan:
 
 **Sprint görevleri:**
-
-Puanlanan Görevler: 
-
-Yan Görevler: 
 
 
 
@@ -407,7 +403,20 @@ Trello Board Görüntüsü:
 
 ## Ürün Durumu:
 
-
+* Oyunda gece, gündüz ve öğlen modları olan skybox sistemi başarıyla eklendi.
+* Yağmur ve sis efektleri için gerekli assetler seçildi ve entegre edildi.
+* 10 zombi dalgası sistemi tamamlandı, zombilerin spawn mekanikleri geliştirildi ve sahneye eklendi.
+* Coin kazanma ve health bar mekanikleri eklendi ve oyun içi HUD’da aktif hale getirildi. Can kaybettikçe progress bar önce sarı sonra kırmızıya dönüyor.
+* Tutorial mekanikleri başarıyla oluşturuldu, 2 sayfa arasında varolan geçiş problemi çözüldü.
+* Ses dosyalarının ayıklanması tamamlandı, ilgili sesleri audio source ile scriptlere entegre edildi.
+* Su tabancası ateşleme mekanizması su ateş edecek şekilde yeniden düzenlendi.
+* Mantar mekaniği oyuncunun canını ve hareket hızını artıracak şekilde kodlandı.(boost)
+* İnventory paneli entegre edildi.
+* Ev ve ambar içi oluşturuldu, oyuncunun bu mekanlara giriş yapması sağlanmalı.
+* Zombi yapay zekası geliştirildi, zombilerden kristal düşürme sistemi şimdilik entegre edilmedi, ilerki sürümlerde eklenecektir.
+* Menü navigasyonuna tuş highlight efektleri ve ses efektleri eklendi.
+* Projedeki dosya yapısı düzenlendi, branchler birleştirildi.
+* Asset optimizasyonu üzerine çalışmalar yapıldı ancak sprint içerisinde tamamlanamadı.Daha az yük gerektiren bir düzen oluşturulacak.
 
 
 ## Oyun içi görseller:
@@ -442,6 +451,30 @@ Trello Board Görüntüsü:
 
 # Sprint Review
 
+* Sprint 3 boyunca takımımız birçok önemli mekaniği hayata geçirdi. Gece-gündüz döngüsü, yağmur ve sis efektleri, zombilerin dalgalar halinde saldırısı gibi oyun atmosferini zenginleştiren özellikler tamamlandı.
+* UI tarafında coin toplama, health bar ve tutorial sistemi oyuncu deneyimini destekleyecek şekilde tasarlandı ve entegre edildi.
+* Ev içi sahne ve ambar gibi mekanlar da oluşturuldu.
+* Su tabancası ateşleme mekanizması ve mantar ile oyuncuya güçlendirme özellikleri eklendi.
+* Ekip içi iletişim ve dosya yapısı düzenlemeleri sprinti sorunsuz tamamlamamıza yardımcı oldu.
+* Daily sprint sistemimiz doğal bir düzene oturdu, grubu daha çok kullandık ve ihtiyaçlarımıza hızlıca cevap bulabildik.
+* Ekip çalışması konusunda birbirimize daha çok uyum sağladık.
+* Bazı UI ve mekaniklerde iyileştirme ihtiyaçları belirlendi.
+* Genel olarak sprint hedefleri karşılandı ve önümüzdeki dönemler için yol haritası netleşti.
+  
 # Sprint Retrospective
+
+Başarılı yanlarımız:
+* Mekaniklerin birlikte entegrasyonu ve takım içi koordinasyon
+* Yapay zeka ve spawn sistemlerinde iyi ilerleme
+* Takım içi iletişimde daha hızlı geri dönüş ve takip
+
+Geliştirmemiz gereken yanlar:
+* Asset optimizasyon sürecini map içine daha iyi entegre etmek
+* Bazı UI görsel uyumları ve highlight efektlerinin geliştirilmesi
+* Zombielerin tarlalara saldırmasını daha sağlıklı bir şekilde çözmek
+* Firebase ile oyun metriklerini kontrol sistemi eklemek
+
+Önümüzdeki süreçte bu alanlara odaklanarak, daha verimli ve stabil bir oyun deneyimi sunmayı hedefliyoruz.
+
 
 
