@@ -21,7 +21,7 @@ MonoBehaviour:
   daysToRipe: 2
   harvestSeconds: 1.5
   harvestAmount: 8
-  harvestItem: {fileID: 11400000, guid: 68e426d28dbf2ed4e9d209b25b65b2bb, type: 2}
+  harvestItem: {fileID: 11400000, guid: a7bd10b0f639e12429fe9aef91d5cf0a, type: 2}
   sellPrice: 0
   craftOutput: {fileID: 0}
   spoilAfterDays: 1
