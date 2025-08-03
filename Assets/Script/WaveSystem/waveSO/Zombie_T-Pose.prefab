@@ -641,8 +641,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bdb38f8115c19843ad5e0ec56e55040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  senseRadius: 12
-  attackTriggerDistance: 1.8
+  detectionRange: 111
+  loseTargetRange: 0
 --- !u!114 &4969026477339027862
 MonoBehaviour:
   m_ObjectHideFlags: 0
