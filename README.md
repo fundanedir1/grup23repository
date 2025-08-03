@@ -401,6 +401,17 @@ Trello Board Görüntüsü:
 
 Trello Board Görüntüsü:
 
+
+### ✅ Trello Görev Takibi
+
+![Trello Görseli 1](https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/trello%20ssleri/f1.png?raw=true)
+
+<p align="center">
+  <img src="https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/trello%20ssleri/f2.png?raw=true" width="45%" />
+  <img src="https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/trello%20ssleri/f3.png?raw=true" width="45%" />
+</p>
+
+
 ## Ürün Durumu:
 
 * Oyunda gece, gündüz ve öğlen modları olan skybox sistemi başarıyla eklendi.
@@ -421,7 +432,6 @@ Trello Board Görüntüsü:
 
 ## Oyun içi görseller:
 
-## Oyun İçi Görseller
 
 ![Görsel 1](https://github.com/fundanedir1/grup23repository/blob/618e56e7b4769f7bca3942181fb87201165f6b57/oyun_ici_gorseller/WhatsApp%20Image%202025-07-17%20at%2016.56.13.jpeg?raw=true)
 
@@ -453,6 +463,15 @@ Trello Board Görüntüsü:
 [Oyun Ekonomisi Excel Dosyası](https://github.com/fundanedir1/grup23repository/blob/698df58742e427d1c8b38b5efb2d4a04d4296f91/game_economy.xlsx)
 
 
+### 🎮 Oyun İçi Ekonomi Görselleri
+
+Crops:
+
+![Ekonomi Görseli 1](https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/oyun_ici_gorseller/eco1.png?raw=true)
+
+Item Upgrades:
+
+![Ekonomi Görseli 2](https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/oyun_ici_gorseller/eco2.png?raw=true)
 
 
 
