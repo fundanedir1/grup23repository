@@ -406,6 +406,9 @@ Trello Board Görüntüsü:
 
 ![Trello Görseli 1](https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/trello%20ssleri/f1.png?raw=true)
 
+![Oyun içi görsel](https://github.com/fundanedir1/grup23repository/blob/caa6f84ee10ac846da52617727e694b19c9c7f0a/oyun_ici_gorseller/ggg.png)
+
+
 <p align="center">
   <img src="https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/trello%20ssleri/f2.png?raw=true" width="45%" />
   <img src="https://github.com/fundanedir1/grup23repository/blob/5e8684f4f2e1419846e5d6d6ecf489bfd0d89788/trello%20ssleri/f3.png?raw=true" width="45%" />
